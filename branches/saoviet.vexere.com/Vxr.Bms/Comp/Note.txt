@@ -1,0 +1,26 @@
+width: 100% => xuong hang
+_hasPickUpOnPrintBKS: false,: DS don doc duong
+.no-background {background:none !important;} => in nen mau xam nv thanh toan
+_onlyPaidBackGround: true, => chi to den cac ghe da thanh toan
++gi? thì em thay cái background c?a .payment thành black
+	r?i thêm cho nó cái color:white;
+font-weight: bold;=> in dam chu
+_hasSelectBranchPayment: true,=> mo thanh toan tai Vp
+border-right: 1px solid #000000;=> 1 do lon, solid: bon mat, # ma mau
+_pTplNumCoach:=> gop tang: 1 la 1 tang; bo lenh nay di la 2 tang
+_pSpecialPosition: => chuyen vi tri tren phoi
+_specialPos: => chuyen vi tri tren Bks
+with: 100% => xuong hang
+margin-top: cai ul => gian cach giua 2 tang
+//Limited date: quy?n 12|10065|1 du?c phép d?t vé trong quá kh?
+  _limitedDateBefore: 7,
+  _limitedMinuteBefore: 10080, // gi?i h?n th?i gian là 1 ngày s? không du?c d?t vé trong quá kh?
+
+// dùng cho các nhà xe mu?n khóa button sau khi b?m Xu?t b?n
+        // 5|10092|1: quy?n này s? m? khóa các button 
+        _closedTripConf: {
+            "UpdateForm": ["btn-cancel", "btn-update", "btn-eprint", "btn-eprint-save"],
+            "ValidForm": []
+        },
+{pseat._fare} ? _psTpl: gia ve
+{pseat._pmInfo} : nhan vien thanh toan

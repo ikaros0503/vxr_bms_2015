@@ -1,0 +1,172 @@
+﻿<script id="winTpl" type="text/x-handlebars-template">
+    <div class="modal fade {{winCls}}" style="display: none">
+        <div class="modal-dialog modal-md modal-new-width{{xWidth}}">
+            <div class="modal-content">
+                {{header}}
+                <div class="modal-body2">
+                    <div class="container-fluid panel-body">
+                        <input type="hidden" class="id" value="0">{{body}}
+                        <div class="modal-footer bor-top-none alg-left pd0 h32">
+                            <div class="ml0 form-inline h32">{{buttons}}</div>
+                        </div>
+                        <div id="{{childId}}" class="form-group mb8 pd0"></div>
+                        <h2 class="text-center rights clearb" data-rights="R{{gRights}}0">{{gTitle}}</h2>
+                        <h4 class="text-center rights clearb gSubTitle" data-rights="R{{gRights}}0">{{gSubTitle}}</h4>
+                        <div id="{{gId}}" class="mt10 rights" data-rights="R{{gRights}}0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="mainContentTpl" type="text/x-handlebars-template">
+    <div class="modal-content">
+        <!--{{header}}-->
+        <div class="modal-body2">
+            <div class="container-fluid panel-body">
+                <input type="hidden" class="id" value="0">
+                <div>{{body}}</div>
+                <div class="modal-footer bor-top-none alg-left pd0 h32">
+                    <div class="ml0 form-inline h32 hidden2">{{buttons}}</div>
+                </div>
+                <div id="{{childId}}" class="form-group mb8 pd0"></div>
+                <h2 class="text-center rights clearb" data-rights="R{{gRights}}0">{{gTitle}}</h2>
+                <h4 class="text-center rights clearb gSubTitle" data-rights="R{{gRights}}0">{{gSubTitle}}</h4>
+                <div id="{{gId}}" class="mt10 rights" data-rights="R{{gRights}}0"></div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="vTripsTpl" type="text/x-handlebars-template">
+    <div class="modal-content" id ="{{id}}">
+        <!--{{header}}-->
+        <div class="modal-body2">
+            <div class="container-fluid panel-body">
+                <input type="hidden" class="id" value="0">
+                <div>{{body}}</div>
+                <hr class="mt0 mb0" />
+                <!-- <div class="modal-footer bor-top-none alg-left pd0 h32">
+                     <div class="ml0 form-inline h32 hidden2">{{buttons}}</div>
+                 </div>-->
+                <div id="{{childId}}" class="form-group mb8 pd0"></div>
+                <!-- <h2 class="text-center rights clearb" data-rights="R{{gRights}}0">{{gTitle}}</h2>-->
+                <h4 class="text-right rights clearb gSubTitle" data-rights="R{{gRights}}0">{{gSubTitle}}</h4>
+                <div id="{{gId}}" class="mt10 rights" data-rights="R{{gRights}}0"></div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="vTripsSumInfo" type="text/x-handlebars-template">
+    <div class="vSumContent">
+        <span>Nhà xe <span class="badge badge-success">{{Comps}}</span> | Tuyến <span class="badge badge-error">{{Routes}} </span> | Hành trình/ ngày <span class="badge">{{Trips}}</span></span>
+    </div>
+</script>
+
+<script id="rowTpl01" type="text/x-handlebars-template">
+    <div class="row mt5">{{html}}</div>
+</script>
+
+<script id="winHeaderTpl01" type="text/x-handlebars-template">
+    <div class="modal-header3">
+        <button type="button" class="close btn-close-new2" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title2">{{title}}</h4>
+    </div>
+</script>
+
+<script id="winTitleTpl01" type="text/x-handlebars-template">
+    <h4 class="modal-title2">{{title}}</h4>
+</script>
+
+<script id="fromTitle099" type="text/x-handlebars-template">
+    <h3 style="{{sty}}">{{title}}</h3>
+</script>
+<script id="winMsgTpl01" type="text/x-handlebars-template">
+    <div class="alert message message-manager">
+        <span class="message-content"></span>
+    </div>
+</script>
+
+<script id="div" type="text/x-handlebars-template">
+    <div id="{{id}}" class="{{cls}}" role="{{role}}">{{{html}}}</div>
+</script>
+<script id="inputHidden02" type="text/x-handlebars-template">
+    <div class="{{colCls}} col-sm-4 hidden">
+        <input type="hidden" name="{{name}}" class="form-control input-sm {{cls}} rights" data-rights="{{rights}}" value="{{val}}" />
+    </div>
+</script>
+<script id="hr" type="text/x-handlebars-template">
+    <hr class="{{cls}}">
+</script>
+
+<script id="table" type="text/x-handlebars-template">
+    <table id="{{id}}" class="{{cls}}">
+        <thead>
+            <tr>
+                {{#each theads}}
+                <th>{{name}}</th>
+                {{/each}}
+            </tr>
+        </thead>
+        {{{html}}}
+    </table>
+</script>
+<script id="table001" type="text/x-handlebars-template">
+    <div class="col-md-12 col-sm-12">
+        <table id="{{id}}" class="{{cls}}">
+            
+        </table>
+    </div>
+</script>
+
+<script id="table00" type="text/x-handlebars-template">
+    <div class="{{colCls}} {{smCls}}">
+        <div class="form-group mb8" title="" data-placement="top" data-toggle="tooltip" data-original-title="{{label}}">
+            <table id="{{id}}" class="{{cls}}"></table>
+        </div>
+        <div class="form-group mb8" style="text-align: right;">
+            <button type="button" class="btn {{ecls}} btn-primary rights" title="{{elabel}}" data-placement="top" data-toggle="tooltip" data-original-title="{{elabel}}" data-rights="{{rights}}">
+                <i class="glyphicon {{iconCls}}">
+                </i> {{btnLbl}}
+            </button>
+        </div>
+    </div>
+</script>
+
+
+<script id="tbody" type="text/x-handlebars-template">
+    <tbody>{{{html}}}</tbody>
+</script>
+
+<script id="tr" type="text/x-handlebars-template">
+    <tr>{{{html}}}</tr>
+</script>
+
+<script id="td" type="text/x-handlebars-template">
+    <td class="{{cls}}">{{{html}}}</td>
+</script>
+
+<script id="tabbar" type="text/x-handlebars-template">
+    <ul class="nav nav-tabs tuyenduong-popup" role="tablist">{{{html}}}</ul>
+</script>
+
+<script id="tabnav" type="text/x-handlebars-template">
+    <li class="{{active}} {{cls}}"><a href=".{{ref}}" role="tab" data-toggle="tab">{{label}}</a></li>
+</script>
+
+<script id="tabcontent" type="text/x-handlebars-template">
+    <div class="tab-content">{{{html}}}</div>
+</script>
+
+<script id="tabpane" type="text/x-handlebars-template">
+    <div class="tab-pane mt10 {{cls}} {{active}}">{{{html}}}</div>
+</script>
+
+<script id="tabpane2" type="text/x-handlebars-template">
+    <div class="tab-pane {{cls}} {{active}}">{{{html}}}</div>
+</script>

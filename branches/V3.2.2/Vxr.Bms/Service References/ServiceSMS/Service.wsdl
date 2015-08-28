@@ -1,0 +1,2036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="About">
+        <s:complexType />
+      </s:element>
+      <s:element name="AboutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AboutResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckClient">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckClientResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckClientResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSPro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senderName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsGUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSProResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSProResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSToListMobilePhonePro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senderName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listPhoneNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSToListMobilePhoneProResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSToListMobilePhoneProResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsGUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMaskedSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senderName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsGUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMaskedSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendMaskedSMSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSToListMobilePhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senderName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="listPhoneNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSToListMobilePhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSToListMobilePhoneResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSToMultiMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senderName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsMessage" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSToMultiMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSToMultiMessageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSToMultiMessage_WithoutSplit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senderName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsMessage" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSToMultiMessage_WithoutSplitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSToMultiMessage_WithoutSplitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommingSMSListFromID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fromID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceTypeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommingSMSListFromIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCommingSMSListFromIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTotalPageOfCommingSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsStatus" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTotalPageOfCommingSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTotalPageOfCommingSMSResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommingSMSListOfPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNO" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsStatus" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommingSMSListOfPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCommingSMSListOfPageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientCommingSMSNotDividePage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsStatus" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientCommingSMSNotDividePageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientCommingSMSNotDividePageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientBalanceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListSMSHostingPrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListSMSHostingPriceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListSMSHostingPriceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSMSStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsList" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSMSStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSMSStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListSMSHostingWithBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListSMSHostingWithBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListSMSHostingWithBalanceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSMSStatusAttachPhoneNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsList" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSMSStatusAttachPhoneNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSMSStatusAttachPhoneNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientSenderNameList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientSenderNameListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientSenderNameListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTotalPageOfClientSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsStatus" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTotalPageOfClientSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTotalPageOfClientSMSResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientSMSListOfPage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clientPass" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNO" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="toDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsStatus" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientSMSListOfPageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientSMSListOfPageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AboutSoapIn">
+    <wsdl:part name="parameters" element="tns:About" />
+  </wsdl:message>
+  <wsdl:message name="AboutSoapOut">
+    <wsdl:part name="parameters" element="tns:AboutResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckClientSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckClient" />
+  </wsdl:message>
+  <wsdl:message name="CheckClientSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetClientInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSProSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSPro" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSProSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSProResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneProSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSToListMobilePhonePro" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneProSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSToListMobilePhoneProResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMS" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMaskedSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMaskedSMS" />
+  </wsdl:message>
+  <wsdl:message name="SendMaskedSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMaskedSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSToListMobilePhone" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSToListMobilePhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSToMultiMessage" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSToMultiMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessage_WithoutSplitSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSToMultiMessage_WithoutSplit" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessage_WithoutSplitSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSToMultiMessage_WithoutSplitResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListFromIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCommingSMSListFromID" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListFromIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCommingSMSListFromIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfCommingSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTotalPageOfCommingSMS" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfCommingSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTotalPageOfCommingSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListOfPageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCommingSMSListOfPage" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListOfPageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCommingSMSListOfPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCommingSMSNotDividePageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientCommingSMSNotDividePage" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCommingSMSNotDividePageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientCommingSMSNotDividePageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientBalance" />
+  </wsdl:message>
+  <wsdl:message name="GetClientBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingPriceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListSMSHostingPrice" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingPriceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListSMSHostingPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSMSStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSMSStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingWithBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListSMSHostingWithBalance" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingWithBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListSMSHostingWithBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusAttachPhoneNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSMSStatusAttachPhoneNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusAttachPhoneNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSMSStatusAttachPhoneNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSenderNameListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientSenderNameList" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSenderNameListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientSenderNameListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfClientSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTotalPageOfClientSMS" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfClientSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTotalPageOfClientSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSMSListOfPageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientSMSListOfPage" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSMSListOfPageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientSMSListOfPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="AboutHttpGetIn" />
+  <wsdl:message name="AboutHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckClientHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckClientHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientInfoHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSProHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="phoneNumber" type="s:string" />
+    <wsdl:part name="smsMessage" type="s:string" />
+    <wsdl:part name="smsGUID" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSProHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneProHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="smsContent" type="s:string" />
+    <wsdl:part name="listPhoneNumber" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneProHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="phoneNumber" type="s:string" />
+    <wsdl:part name="smsMessage" type="s:string" />
+    <wsdl:part name="smsGUID" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMaskedSMSHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="phoneNumber" type="s:string" />
+    <wsdl:part name="smsMessage" type="s:string" />
+    <wsdl:part name="smsGUID" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMaskedSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="smsContent" type="s:string" />
+    <wsdl:part name="listPhoneNumber" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessageHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="smsMessage" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessageHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessage_WithoutSplitHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="smsMessage" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessage_WithoutSplitHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListFromIDHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="fromID" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListFromIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfCommingSMSHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="fromDate" type="s:string" />
+    <wsdl:part name="toDate" type="s:string" />
+    <wsdl:part name="smsStatus" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfCommingSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListOfPageHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="pageNO" type="s:string" />
+    <wsdl:part name="fromDate" type="s:string" />
+    <wsdl:part name="toDate" type="s:string" />
+    <wsdl:part name="smsStatus" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListOfPageHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCommingSMSNotDividePageHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="fromDate" type="s:string" />
+    <wsdl:part name="toDate" type="s:string" />
+    <wsdl:part name="smsStatus" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCommingSMSNotDividePageHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientBalanceHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientBalanceHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingPriceHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingPriceHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="smsList" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingWithBalanceHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingWithBalanceHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusAttachPhoneNumberHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="smsList" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusAttachPhoneNumberHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSenderNameListHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSenderNameListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfClientSMSHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="fromDate" type="s:string" />
+    <wsdl:part name="toDate" type="s:string" />
+    <wsdl:part name="smsStatus" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfClientSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSMSListOfPageHttpGetIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="pageNO" type="s:string" />
+    <wsdl:part name="fromDate" type="s:string" />
+    <wsdl:part name="toDate" type="s:string" />
+    <wsdl:part name="smsStatus" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSMSListOfPageHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AboutHttpPostIn" />
+  <wsdl:message name="AboutHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckClientHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckClientHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientInfoHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSProHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="phoneNumber" type="s:string" />
+    <wsdl:part name="smsMessage" type="s:string" />
+    <wsdl:part name="smsGUID" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSProHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneProHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="smsContent" type="s:string" />
+    <wsdl:part name="listPhoneNumber" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneProHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="phoneNumber" type="s:string" />
+    <wsdl:part name="smsMessage" type="s:string" />
+    <wsdl:part name="smsGUID" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMaskedSMSHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="phoneNumber" type="s:string" />
+    <wsdl:part name="smsMessage" type="s:string" />
+    <wsdl:part name="smsGUID" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMaskedSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="smsContent" type="s:string" />
+    <wsdl:part name="listPhoneNumber" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToListMobilePhoneHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessageHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="smsMessage" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessageHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessage_WithoutSplitHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="senderName" type="s:string" />
+    <wsdl:part name="smsMessage" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSToMultiMessage_WithoutSplitHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListFromIDHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="fromID" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListFromIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfCommingSMSHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="fromDate" type="s:string" />
+    <wsdl:part name="toDate" type="s:string" />
+    <wsdl:part name="smsStatus" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfCommingSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListOfPageHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="pageNO" type="s:string" />
+    <wsdl:part name="fromDate" type="s:string" />
+    <wsdl:part name="toDate" type="s:string" />
+    <wsdl:part name="smsStatus" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCommingSMSListOfPageHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCommingSMSNotDividePageHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="fromDate" type="s:string" />
+    <wsdl:part name="toDate" type="s:string" />
+    <wsdl:part name="smsStatus" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCommingSMSNotDividePageHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientBalanceHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="serviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientBalanceHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingPriceHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingPriceHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="smsList" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingWithBalanceHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListSMSHostingWithBalanceHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusAttachPhoneNumberHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="smsList" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusAttachPhoneNumberHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSenderNameListHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSenderNameListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfClientSMSHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="fromDate" type="s:string" />
+    <wsdl:part name="toDate" type="s:string" />
+    <wsdl:part name="smsStatus" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTotalPageOfClientSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSMSListOfPageHttpPostIn">
+    <wsdl:part name="clientNo" type="s:string" />
+    <wsdl:part name="clientPass" type="s:string" />
+    <wsdl:part name="pageNO" type="s:string" />
+    <wsdl:part name="fromDate" type="s:string" />
+    <wsdl:part name="toDate" type="s:string" />
+    <wsdl:part name="smsStatus" type="s:string" />
+    <wsdl:part name="serviceTypeID" type="s:string" />
+    <wsdl:part name="key" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSMSListOfPageHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="About">
+      <wsdl:input message="tns:AboutSoapIn" />
+      <wsdl:output message="tns:AboutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckClient">
+      <wsdl:input message="tns:CheckClientSoapIn" />
+      <wsdl:output message="tns:CheckClientSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientInfo">
+      <wsdl:input message="tns:GetClientInfoSoapIn" />
+      <wsdl:output message="tns:GetClientInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSPro">
+      <wsdl:input message="tns:SendSMSProSoapIn" />
+      <wsdl:output message="tns:SendSMSProSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhonePro">
+      <wsdl:input message="tns:SendSMSToListMobilePhoneProSoapIn" />
+      <wsdl:output message="tns:SendSMSToListMobilePhoneProSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <wsdl:input message="tns:SendSMSSoapIn" />
+      <wsdl:output message="tns:SendSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMaskedSMS">
+      <wsdl:input message="tns:SendMaskedSMSSoapIn" />
+      <wsdl:output message="tns:SendMaskedSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhone">
+      <wsdl:input message="tns:SendSMSToListMobilePhoneSoapIn" />
+      <wsdl:output message="tns:SendSMSToListMobilePhoneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage">
+      <wsdl:input message="tns:SendSMSToMultiMessageSoapIn" />
+      <wsdl:output message="tns:SendSMSToMultiMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage_WithoutSplit">
+      <wsdl:input message="tns:SendSMSToMultiMessage_WithoutSplitSoapIn" />
+      <wsdl:output message="tns:SendSMSToMultiMessage_WithoutSplitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListFromID">
+      <wsdl:input message="tns:GetCommingSMSListFromIDSoapIn" />
+      <wsdl:output message="tns:GetCommingSMSListFromIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfCommingSMS">
+      <wsdl:input message="tns:GetTotalPageOfCommingSMSSoapIn" />
+      <wsdl:output message="tns:GetTotalPageOfCommingSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListOfPage">
+      <wsdl:input message="tns:GetCommingSMSListOfPageSoapIn" />
+      <wsdl:output message="tns:GetCommingSMSListOfPageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCommingSMSNotDividePage">
+      <wsdl:input message="tns:GetClientCommingSMSNotDividePageSoapIn" />
+      <wsdl:output message="tns:GetClientCommingSMSNotDividePageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientBalance">
+      <wsdl:input message="tns:GetClientBalanceSoapIn" />
+      <wsdl:output message="tns:GetClientBalanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingPrice">
+      <wsdl:input message="tns:GetListSMSHostingPriceSoapIn" />
+      <wsdl:output message="tns:GetListSMSHostingPriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatus">
+      <wsdl:input message="tns:GetSMSStatusSoapIn" />
+      <wsdl:output message="tns:GetSMSStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingWithBalance">
+      <wsdl:input message="tns:GetListSMSHostingWithBalanceSoapIn" />
+      <wsdl:output message="tns:GetListSMSHostingWithBalanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatusAttachPhoneNumber">
+      <wsdl:input message="tns:GetSMSStatusAttachPhoneNumberSoapIn" />
+      <wsdl:output message="tns:GetSMSStatusAttachPhoneNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSenderNameList">
+      <wsdl:input message="tns:GetClientSenderNameListSoapIn" />
+      <wsdl:output message="tns:GetClientSenderNameListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfClientSMS">
+      <wsdl:input message="tns:GetTotalPageOfClientSMSSoapIn" />
+      <wsdl:output message="tns:GetTotalPageOfClientSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSMSListOfPage">
+      <wsdl:input message="tns:GetClientSMSListOfPageSoapIn" />
+      <wsdl:output message="tns:GetClientSMSListOfPageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="About">
+      <wsdl:input message="tns:AboutHttpGetIn" />
+      <wsdl:output message="tns:AboutHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckClient">
+      <wsdl:input message="tns:CheckClientHttpGetIn" />
+      <wsdl:output message="tns:CheckClientHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientInfo">
+      <wsdl:input message="tns:GetClientInfoHttpGetIn" />
+      <wsdl:output message="tns:GetClientInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSPro">
+      <wsdl:input message="tns:SendSMSProHttpGetIn" />
+      <wsdl:output message="tns:SendSMSProHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhonePro">
+      <wsdl:input message="tns:SendSMSToListMobilePhoneProHttpGetIn" />
+      <wsdl:output message="tns:SendSMSToListMobilePhoneProHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <wsdl:input message="tns:SendSMSHttpGetIn" />
+      <wsdl:output message="tns:SendSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMaskedSMS">
+      <wsdl:input message="tns:SendMaskedSMSHttpGetIn" />
+      <wsdl:output message="tns:SendMaskedSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhone">
+      <wsdl:input message="tns:SendSMSToListMobilePhoneHttpGetIn" />
+      <wsdl:output message="tns:SendSMSToListMobilePhoneHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage">
+      <wsdl:input message="tns:SendSMSToMultiMessageHttpGetIn" />
+      <wsdl:output message="tns:SendSMSToMultiMessageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage_WithoutSplit">
+      <wsdl:input message="tns:SendSMSToMultiMessage_WithoutSplitHttpGetIn" />
+      <wsdl:output message="tns:SendSMSToMultiMessage_WithoutSplitHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListFromID">
+      <wsdl:input message="tns:GetCommingSMSListFromIDHttpGetIn" />
+      <wsdl:output message="tns:GetCommingSMSListFromIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfCommingSMS">
+      <wsdl:input message="tns:GetTotalPageOfCommingSMSHttpGetIn" />
+      <wsdl:output message="tns:GetTotalPageOfCommingSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListOfPage">
+      <wsdl:input message="tns:GetCommingSMSListOfPageHttpGetIn" />
+      <wsdl:output message="tns:GetCommingSMSListOfPageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCommingSMSNotDividePage">
+      <wsdl:input message="tns:GetClientCommingSMSNotDividePageHttpGetIn" />
+      <wsdl:output message="tns:GetClientCommingSMSNotDividePageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientBalance">
+      <wsdl:input message="tns:GetClientBalanceHttpGetIn" />
+      <wsdl:output message="tns:GetClientBalanceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingPrice">
+      <wsdl:input message="tns:GetListSMSHostingPriceHttpGetIn" />
+      <wsdl:output message="tns:GetListSMSHostingPriceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatus">
+      <wsdl:input message="tns:GetSMSStatusHttpGetIn" />
+      <wsdl:output message="tns:GetSMSStatusHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingWithBalance">
+      <wsdl:input message="tns:GetListSMSHostingWithBalanceHttpGetIn" />
+      <wsdl:output message="tns:GetListSMSHostingWithBalanceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatusAttachPhoneNumber">
+      <wsdl:input message="tns:GetSMSStatusAttachPhoneNumberHttpGetIn" />
+      <wsdl:output message="tns:GetSMSStatusAttachPhoneNumberHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSenderNameList">
+      <wsdl:input message="tns:GetClientSenderNameListHttpGetIn" />
+      <wsdl:output message="tns:GetClientSenderNameListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfClientSMS">
+      <wsdl:input message="tns:GetTotalPageOfClientSMSHttpGetIn" />
+      <wsdl:output message="tns:GetTotalPageOfClientSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSMSListOfPage">
+      <wsdl:input message="tns:GetClientSMSListOfPageHttpGetIn" />
+      <wsdl:output message="tns:GetClientSMSListOfPageHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="About">
+      <wsdl:input message="tns:AboutHttpPostIn" />
+      <wsdl:output message="tns:AboutHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckClient">
+      <wsdl:input message="tns:CheckClientHttpPostIn" />
+      <wsdl:output message="tns:CheckClientHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientInfo">
+      <wsdl:input message="tns:GetClientInfoHttpPostIn" />
+      <wsdl:output message="tns:GetClientInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSPro">
+      <wsdl:input message="tns:SendSMSProHttpPostIn" />
+      <wsdl:output message="tns:SendSMSProHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhonePro">
+      <wsdl:input message="tns:SendSMSToListMobilePhoneProHttpPostIn" />
+      <wsdl:output message="tns:SendSMSToListMobilePhoneProHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <wsdl:input message="tns:SendSMSHttpPostIn" />
+      <wsdl:output message="tns:SendSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMaskedSMS">
+      <wsdl:input message="tns:SendMaskedSMSHttpPostIn" />
+      <wsdl:output message="tns:SendMaskedSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhone">
+      <wsdl:input message="tns:SendSMSToListMobilePhoneHttpPostIn" />
+      <wsdl:output message="tns:SendSMSToListMobilePhoneHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage">
+      <wsdl:input message="tns:SendSMSToMultiMessageHttpPostIn" />
+      <wsdl:output message="tns:SendSMSToMultiMessageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage_WithoutSplit">
+      <wsdl:input message="tns:SendSMSToMultiMessage_WithoutSplitHttpPostIn" />
+      <wsdl:output message="tns:SendSMSToMultiMessage_WithoutSplitHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListFromID">
+      <wsdl:input message="tns:GetCommingSMSListFromIDHttpPostIn" />
+      <wsdl:output message="tns:GetCommingSMSListFromIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfCommingSMS">
+      <wsdl:input message="tns:GetTotalPageOfCommingSMSHttpPostIn" />
+      <wsdl:output message="tns:GetTotalPageOfCommingSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListOfPage">
+      <wsdl:input message="tns:GetCommingSMSListOfPageHttpPostIn" />
+      <wsdl:output message="tns:GetCommingSMSListOfPageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCommingSMSNotDividePage">
+      <wsdl:input message="tns:GetClientCommingSMSNotDividePageHttpPostIn" />
+      <wsdl:output message="tns:GetClientCommingSMSNotDividePageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientBalance">
+      <wsdl:input message="tns:GetClientBalanceHttpPostIn" />
+      <wsdl:output message="tns:GetClientBalanceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingPrice">
+      <wsdl:input message="tns:GetListSMSHostingPriceHttpPostIn" />
+      <wsdl:output message="tns:GetListSMSHostingPriceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatus">
+      <wsdl:input message="tns:GetSMSStatusHttpPostIn" />
+      <wsdl:output message="tns:GetSMSStatusHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingWithBalance">
+      <wsdl:input message="tns:GetListSMSHostingWithBalanceHttpPostIn" />
+      <wsdl:output message="tns:GetListSMSHostingWithBalanceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatusAttachPhoneNumber">
+      <wsdl:input message="tns:GetSMSStatusAttachPhoneNumberHttpPostIn" />
+      <wsdl:output message="tns:GetSMSStatusAttachPhoneNumberHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSenderNameList">
+      <wsdl:input message="tns:GetClientSenderNameListHttpPostIn" />
+      <wsdl:output message="tns:GetClientSenderNameListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfClientSMS">
+      <wsdl:input message="tns:GetTotalPageOfClientSMSHttpPostIn" />
+      <wsdl:output message="tns:GetTotalPageOfClientSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSMSListOfPage">
+      <wsdl:input message="tns:GetClientSMSListOfPageHttpPostIn" />
+      <wsdl:output message="tns:GetClientSMSListOfPageHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="About">
+      <soap:operation soapAction="http://tempuri.org/About" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckClient">
+      <soap:operation soapAction="http://tempuri.org/CheckClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientInfo">
+      <soap:operation soapAction="http://tempuri.org/GetClientInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSPro">
+      <soap:operation soapAction="http://tempuri.org/SendSMSPro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhonePro">
+      <soap:operation soapAction="http://tempuri.org/SendSMSToListMobilePhonePro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap:operation soapAction="http://tempuri.org/SendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMaskedSMS">
+      <soap:operation soapAction="http://tempuri.org/SendMaskedSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhone">
+      <soap:operation soapAction="http://tempuri.org/SendSMSToListMobilePhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage">
+      <soap:operation soapAction="http://tempuri.org/SendSMSToMultiMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage_WithoutSplit">
+      <soap:operation soapAction="http://tempuri.org/SendSMSToMultiMessage_WithoutSplit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListFromID">
+      <soap:operation soapAction="http://tempuri.org/GetCommingSMSListFromID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfCommingSMS">
+      <soap:operation soapAction="http://tempuri.org/GetTotalPageOfCommingSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListOfPage">
+      <soap:operation soapAction="http://tempuri.org/GetCommingSMSListOfPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCommingSMSNotDividePage">
+      <soap:operation soapAction="http://tempuri.org/GetClientCommingSMSNotDividePage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientBalance">
+      <soap:operation soapAction="http://tempuri.org/GetClientBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingPrice">
+      <soap:operation soapAction="http://tempuri.org/GetListSMSHostingPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatus">
+      <soap:operation soapAction="http://tempuri.org/GetSMSStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingWithBalance">
+      <soap:operation soapAction="http://tempuri.org/GetListSMSHostingWithBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatusAttachPhoneNumber">
+      <soap:operation soapAction="http://tempuri.org/GetSMSStatusAttachPhoneNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSenderNameList">
+      <soap:operation soapAction="http://tempuri.org/GetClientSenderNameList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfClientSMS">
+      <soap:operation soapAction="http://tempuri.org/GetTotalPageOfClientSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSMSListOfPage">
+      <soap:operation soapAction="http://tempuri.org/GetClientSMSListOfPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="About">
+      <soap12:operation soapAction="http://tempuri.org/About" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckClient">
+      <soap12:operation soapAction="http://tempuri.org/CheckClient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetClientInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSPro">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSPro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhonePro">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSToListMobilePhonePro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap12:operation soapAction="http://tempuri.org/SendSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMaskedSMS">
+      <soap12:operation soapAction="http://tempuri.org/SendMaskedSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhone">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSToListMobilePhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSToMultiMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage_WithoutSplit">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSToMultiMessage_WithoutSplit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListFromID">
+      <soap12:operation soapAction="http://tempuri.org/GetCommingSMSListFromID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfCommingSMS">
+      <soap12:operation soapAction="http://tempuri.org/GetTotalPageOfCommingSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListOfPage">
+      <soap12:operation soapAction="http://tempuri.org/GetCommingSMSListOfPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCommingSMSNotDividePage">
+      <soap12:operation soapAction="http://tempuri.org/GetClientCommingSMSNotDividePage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientBalance">
+      <soap12:operation soapAction="http://tempuri.org/GetClientBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingPrice">
+      <soap12:operation soapAction="http://tempuri.org/GetListSMSHostingPrice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetSMSStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingWithBalance">
+      <soap12:operation soapAction="http://tempuri.org/GetListSMSHostingWithBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatusAttachPhoneNumber">
+      <soap12:operation soapAction="http://tempuri.org/GetSMSStatusAttachPhoneNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSenderNameList">
+      <soap12:operation soapAction="http://tempuri.org/GetClientSenderNameList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfClientSMS">
+      <soap12:operation soapAction="http://tempuri.org/GetTotalPageOfClientSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSMSListOfPage">
+      <soap12:operation soapAction="http://tempuri.org/GetClientSMSListOfPage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="About">
+      <http:operation location="/About" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckClient">
+      <http:operation location="/CheckClient" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientInfo">
+      <http:operation location="/GetClientInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSPro">
+      <http:operation location="/SendSMSPro" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhonePro">
+      <http:operation location="/SendSMSToListMobilePhonePro" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <http:operation location="/SendSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMaskedSMS">
+      <http:operation location="/SendMaskedSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhone">
+      <http:operation location="/SendSMSToListMobilePhone" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage">
+      <http:operation location="/SendSMSToMultiMessage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage_WithoutSplit">
+      <http:operation location="/SendSMSToMultiMessage_WithoutSplit" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListFromID">
+      <http:operation location="/GetCommingSMSListFromID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfCommingSMS">
+      <http:operation location="/GetTotalPageOfCommingSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListOfPage">
+      <http:operation location="/GetCommingSMSListOfPage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCommingSMSNotDividePage">
+      <http:operation location="/GetClientCommingSMSNotDividePage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientBalance">
+      <http:operation location="/GetClientBalance" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingPrice">
+      <http:operation location="/GetListSMSHostingPrice" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatus">
+      <http:operation location="/GetSMSStatus" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingWithBalance">
+      <http:operation location="/GetListSMSHostingWithBalance" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatusAttachPhoneNumber">
+      <http:operation location="/GetSMSStatusAttachPhoneNumber" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSenderNameList">
+      <http:operation location="/GetClientSenderNameList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfClientSMS">
+      <http:operation location="/GetTotalPageOfClientSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSMSListOfPage">
+      <http:operation location="/GetClientSMSListOfPage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="About">
+      <http:operation location="/About" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckClient">
+      <http:operation location="/CheckClient" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientInfo">
+      <http:operation location="/GetClientInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSPro">
+      <http:operation location="/SendSMSPro" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhonePro">
+      <http:operation location="/SendSMSToListMobilePhonePro" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <http:operation location="/SendSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMaskedSMS">
+      <http:operation location="/SendMaskedSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToListMobilePhone">
+      <http:operation location="/SendSMSToListMobilePhone" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage">
+      <http:operation location="/SendSMSToMultiMessage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSToMultiMessage_WithoutSplit">
+      <http:operation location="/SendSMSToMultiMessage_WithoutSplit" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListFromID">
+      <http:operation location="/GetCommingSMSListFromID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfCommingSMS">
+      <http:operation location="/GetTotalPageOfCommingSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommingSMSListOfPage">
+      <http:operation location="/GetCommingSMSListOfPage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCommingSMSNotDividePage">
+      <http:operation location="/GetClientCommingSMSNotDividePage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientBalance">
+      <http:operation location="/GetClientBalance" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingPrice">
+      <http:operation location="/GetListSMSHostingPrice" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatus">
+      <http:operation location="/GetSMSStatus" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListSMSHostingWithBalance">
+      <http:operation location="/GetListSMSHostingWithBalance" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatusAttachPhoneNumber">
+      <http:operation location="/GetSMSStatusAttachPhoneNumber" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSenderNameList">
+      <http:operation location="/GetClientSenderNameList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTotalPageOfClientSMS">
+      <http:operation location="/GetTotalPageOfClientSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientSMSListOfPage">
+      <http:operation location="/GetClientSMSListOfPage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://center.fibosms.com/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://center.fibosms.com/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="http://center.fibosms.com/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://center.fibosms.com/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,345 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Email Template</title>
+    <style type="text/css">
+        body {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 12px;
+        }
+
+        .table-info td {
+            padding: 5px 10px;
+            font-size: 13px;
+        }
+
+        .table-cnt {
+            width: 643px;
+            font-family: Arial,Helvetica,sans-serif;
+        }
+
+        hr {
+            height: 2px;
+            margin-bottom: 0;
+            margin-top: 0;
+            border: none;
+            border-top: 1px #777 solid;
+        }
+
+        h3, h4, h5 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .tacHeader {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .tacSpan {
+            position: relative;
+            font-size: 20px;
+            top: 17px;
+            padding: 5px 15px;
+            background-color: #F8F8F8;
+            color: #1e62a3;
+        }
+		    .term-and-condition-columns {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+    }
+
+    ol.term-and-condition {
+        line-height: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+
+        ol.term-and-condition a {
+            color: blue;
+        }
+
+        ol.term-and-condition ol {
+            list-style-type: lower-alpha;
+        }
+
+        ol.term-and-condition table {
+            border: 1px solid #000;
+        }
+
+            ol.term-and-condition table th {
+                font-weight: 700;
+            }
+
+            ol.term-and-condition table td, ol.term-and-condition table th {
+                padding: 3px;
+                border: 1px solid #000 !important;
+            }
+
+        ol.term-and-condition li {
+            margin-left: 5px;
+        }
+
+    .tacHeader {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .tacSpan {
+        position: relative;
+        font-size: 20px;
+        top: 17px;
+        padding: 5px 15px;
+        background-color: #F8F8F8;
+        color: #1e62a3;
+    }
+    </style>
+</head>
+<body style="font-family: Arial,Helvetica,sans-serif; font-size: 13px;width: 645px; margin:0 auto; background:#fff;" width="645">
+
+    <div style="width:645px; margin:0 auto;">
+        <div style="clear:both;"></div>
+        <!-- / notice-->
+
+        <p>Kính gửi quý khách hàng <%CustomerFirstName%></p>
+        <p>Đơn đặt vé từ <%FromStopName%> đi <%ToStopName%> vào ngày <%DepartureTime%> <%DepartureDate%> của quý khách đã được VeXeRe.com xác nhận thanh toán thành công.</p>
+
+        <h4>Chi tiết thông tin đặt vé</h4>
+        <!-- > Ticket info-->
+
+        <div class="table-cnt">
+            <table cellspacing="0" style="width: 643px; border: 1px solid #1E62A3; border-radius: 5px;overflow: hidden;">
+                <tr>
+                    <td style="border-bottom:1px #777 solid; background:#1e62a3; padding-left:10px;" align="left" valign="middle">
+                        <a target="_blank" href="http://vexere.com"><img src="http://vexere.com/Content/tp/images/email/logo-white.png" alt="Ve Xe Re" width="250" height="59" /></a>
+                    </td>
+                    <td colspan="2" align="right" style="border-bottom:1px #777 solid; background:#1e62a3;">
+                        <table width="100%">
+                            <tr>
+                                <td align="right">
+                                    <div style="font-size: 12px; font-weight: 600; padding-top: 3px; text-align: right; text-transform: uppercase; margin: 15px 15px 0 0;">
+                                        <p id="code" style="line-height: 1.4em; margin: 0 0 0.7em; text-indent: 0; color:#fff;">
+
+                                            Mã đặt vé: <span style="color: #FDB813; margin-left: 5px; text-align: left; width: 75px; font-size: 18px;" class="text-black"><%BookingCode%></span>
+                                        </p>
+
+                                        <p id="date" style="line-height: 1.4em; margin: 0 0 0.7em; text-indent: 0; color:#fff; ">
+                                            Ngày đi: <span style="color: #FDB813;  margin-left: 5px; text-align: left; width: 75px; font-size: 14px;" class="text-black"><%DepartureDate%></span>
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="table-info">
+                            <tr>
+                                <td colspan="2" style="width: 290px; padding:0 10px;">
+                                    <h3 style="color: #1E62A3; font-weight: bold;" class="text-black">Thông tin vé xe</h3>
+                                    <hr />
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Hãng xe:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b><%OperatorName%></b></td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Tuyến đường:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b><%RouteName%></b></td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Xuất phát:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b><%FromStopName%></b></td>
+                            </tr>
+                            
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Đích đến:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b><%ToStopName%></b></td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Ngày đi:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b><%DepartureDate%></b></td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Giờ đi:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b><%DepartureTime%></b></td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Số ghế:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b><%BookingSeats%></b></td>
+                            </tr>
+
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Giá vé:</td>
+
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b><%FarePerPeople%></b>/người</td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr style="border-top: 1px solid #D5D5D5; padding-top: 10px;">
+                                <td style=" color: #1E62A3; font-size: 16px; font-weight: 600;">Tổng tiền: </td>
+
+                                <td style=" color: #FD8017; font-size: 18px; font-weight: 600;" class="text-black"><%ExpectedTotalFare%> VNĐ</td>
+
+                            </tr>
+                        </table>
+
+                    </td>
+                    <td style="border-left:1px #777 solid;" width="2"></td>
+                    <td valign="top">
+                        <table class="table-info">
+                            <tr>
+                                <td colspan="2" style="width: 290px; padding:0 10px;">
+                                    <h3 style="color: #1E62A3; font-weight: bold; " class="text-black">Thông tin hành khách</h3>
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Họ Tên:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b><%CustomerFirstName%></b></td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Điện thoại:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b><%CustomerPhone%></b></td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Thanh toán:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b>Đại lý vé xe rẻ</b></td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: Arial,Helvetica,sans-serif;">Hình thức thanh toán:</td>
+                                <td style="font-family: Arial,Helvetica,sans-serif;"><b>Thu tiền tại nhà</b></td>
+                            </tr>
+							<tr>
+							<td colspan="2"><img src="http://vexere.com/content/payment/images/paid-stamp.png" alt="Ve Xe Re" width="250" height="59" /></td>
+							</tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:10px 10px; border-top:1px #777 solid;font-family: Arial,Helvetica,sans-serif; background:#1e62a3;">
+                        <p id="date" style="line-height: 1.4em; margin: 0 0 0.7em; text-indent: 0; color:#fff; ">
+                            Hotline: <span style="color: #FDB813;  margin-left: 5px; text-align: left; width: 75px; font-size: 14px;" class="text-black">1900 6484</span>
+                        </p>
+                    </td>
+                    <td colspan="2" style="padding:10px 10px;border-top:1px #777 solid; background:#1e62a3; color:#fff;" align="right">
+                        <div style="font-style: italic; float: right;font-family: Arial,Helvetica,sans-serif;"><strong style="font-family: Arial,Helvetica,sans-serif;">E-Ticket - Vexere.com</strong> <%DateTimeNow%></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+   <div >
+
+        <p>
+            Lưu ý:
+
+- Để lên xe hợp lệ, Quý Khách cần xuất trình mã vé điện tử qua tin nhắn SMS hoặc email xác nhận thanh toán gửi từ VeXeRe.
+- Quý khách cần có mặt trước 30 phút trước khi xe khởi hành.
+Để được hỗ trợ trực tiếp, xin vui lòng liên hệ dịch vụ chăm sóc khách hàng của VeXeRe.com:
+- Hotline: 1900 6484
+- Email: hotro@vexere.com
+
+Một lần nữa VeXeRe.com xin cảm ơn quý khách và rất mong sẽ được phục vụ mọi nhu cầu mua vé xe khách của quý khách trong tương lai.
+
+© 2015 VeXeRe.com
+Công ty Cổ phần VeXeRe.com
+VP CyberAgent - Lầu 4 - Lữ Gia Plaza, 70 Lữ Gia, P.15, Q.11, TP. Hồ Chí Minh
+        </p>
+
+
+            <div class="tacHeader">
+                <span class="tacSpan">
+                    Điều khoản sử dụng
+                </span>
+                <hr>
+            </div>
+            <div class="term-and-condition-columns">
+                <ol class="term-and-condition">
+                    <li>VeXeRe chỉ là một đại lý vé xe khách cho phép quý khách mua vé cũng như tìm hiểu thông tin của các hãng xe khách khác nhau. VeXeRe không sở hữu hoặc vận hành các dịch vụ xe khách. Chúng tôi ra đời với mong muốn cho phép khách hàng so sánh và lựa chọn giữa các hãng xe khác nhau trên các tiêu chí như thời gian khởi hành, giá vé, cũng như chất lượng của các hãng xe. Khách hàng có thể mua vé trực tuyến hoặc qua tổng đài tại VeXeRe.com.</li>
+                    <li>Thời gian đến và khởi hành được ghi trong vé chỉ là thời gian dự kiến. Thời gian khởi hành chính thức và thời gian đến có thể bị xê lệch do nhiều yếu tố khách quan như kẹt xe, xe hư...  Hành khách nên gọi điện thoại liên hệ với các hãng xe theo số điện thoại liên hệ được ghi trên vé để xác nhận thời điểm và địa điểm khởi hành vào ngày thực hiện chuyến đi.</li>
+                    <li>
+                        Hành khách được yêu cầu mang theo những giấy tờ sau tại thời điểm lên xe, nếu không  có thể bị từ chối cho lên xe:
+                        <ol>
+                            <li>Tin nhắn SMS hoặc Email có thông tin về vé.</li>
+                            <li>Tuy nhiên một số hãng xe không chấp nhận các định dạng vé điện tử. Đối với các trường hợp này, quý khách vui lòng in thông tin vé ra và mang theo. Chúng tôi sẽ thông báo cho quý khách nếu quý khách cần in vé ra.</li>
+                            <li>Chứng minh nhân dân hoặc các giấy tờ tùy thân khác có ảnh và tên của quý khách như hộ chiếu, giấy phép lái xe.</li>
+                        </ol>
+                    </li>
+                    <li>Trường hợp đã thanh toán tiền vé, quý khách cần có mặt tại điểm khởi hành 15 phút trước giờ khởi hành dự kiến, hoặc sớm hơn tùy theo quy định của hãng xe.</li>
+                    <li>Khi có bất kỳ khiếu nại gì, hành khách cần thông báo trong thời gian 7 ngày kể từ ngày khởi hành.</li>
+                    <li>
+                        Việc đặt vé được xem là thành công nếu trang xác nhận đặt vé được hiển thị cho quý khách, ngay cả khi quý khách không nhận được tin nhắn SMS hoặc
+                        vì bất cứ lý do nào.<br />Lưu ý: Trong trường hợp không nhận được tin nhắn SMS/Email,  có thể liên hệ 1900 6484 để được hỗ trợ thêm.
+                    </li>
+                    <li>Khi đặt chỗ/mua vé tại VeXeRe.com, hành khách đã đồng ý cho phép VeXeRe gọi điện, Email, gửi tin SMS hoặc gửi thông báo để cung cấp thông tin hoặc lấy thông tin liên quan đến việc đặt chỗ của hành khách.</li>
+                    <li>Các tiện ích như TV, điều hòa không khí, nước hoặc bất kỳ dịch vụ khác được đề cập trên VeXeRe.com để giúp hành khách có đầy đủ thông tin hơn trước khi quyết định. Nếu có bất kỳ yêu cầu hoàn tiền, khiếu nại nào do thiếu sót các tiện tích này, hành khách cần phải giải quyết trực tiếp với hãng xe.</li>
+                    <li>
+                        Trách nhiệm của VeXere chỉ bao gồm:
+                        <ol>
+                            <li>Phát hành vé xe hợp lệ thông qua các đối tác/hãng xe trong mạng lưới của VeXeRe.</li>
+                            <li>Cung cấp các hỗ trợ qua điện thoại hoặc email đối với các vấn đề đặt vé, hủy vé.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Trách nhiệm của VeXere KHÔNG bao gồm:
+                        <ol>
+                            <li>Dữ liệu không chính xác được cung cấp bởi khách hàng khi đặt vé</li>
+                            <li>Chậm trễ về giờ khởi hành, hủy chuyến, sự cố và tai nạn.</li>
+                            <li>Xe bị hủy chuyến trong trường hợp bất khả kháng.</li>
+                            <li>Bất kỳ hành vi sai trái nào của nhân viên hãng xe.</li>
+                            <li>Hãng xe tự ý thay đổi chỗ ngồi của quý khách.</li>
+                            <li>Hành lý của quý khách bị thất lạc/ đánh cắp/ hư hại.</li>
+                            <li>Quý khách đợi xe khách ở sai địa điểm.</li>
+                            <li>Hành khách đến trễ và không thể liên lạc được qua điện thoại, chúng tôi không chịu trách nhiệm nếu xe khách bỏ đi mà không đón khách. Trong trường hợp này quý khách sẽ không được hoàn trả lại tiền vé.</li>
+                            <li>Hãng xe không cung cấp đầy đủ tiện nghi như được đề cập lúc đặt chỗ.</li>
+                            <li>Thay đổi loại xe do hãng xe thực hiện vì bất cứ lý do nào.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Chính sách hủy vé
+                        <ol>
+                            <li>
+                                Phí hủy vé đối với vé đặt thông qua VeXeRe: Tham khảo tại Quy chế hoạt động sàn giao dịch thương mại điện tử VeXeRe.Com (http://vexere.com/vi-VN/quy-che.html)
+                            </li>
+                            <br>
+                            Lưu ý:
+                            <br>
+                            <ul>
+                                <li>1)  Giờ khởi hành được tính vào thời điểm xe bắt đầu khởi hành ở đầu tuyến đường và không phụ thuộc vào thời gian hành khách lên xe.</li>
+                                <li>2)  Phí hủy vé được áp dụng trên giá vé gốc, không áp dụng trên giá vé sau khi đã giảm giá khuyễn mãi. Chi phí phạt hủy vé được trích từ tiền vé đã thanh toán và phần tiền còn lại sẽ được hoàn trả.</li>
+                                <li>3)  Chính sách hủy vé này không áp dụng cho dịp Lễ Tết. Vào các dịp này đã số các hãng xe không cho hủy, đổi vé.</li>
+                            </ul>
+                        </ol>
+                    </li>
+                    <li>
+                        Chính sách hoàn tiền
+                        <ol>
+                            <li>Tiền vé được hoàn trả trong các trường hợp hủy vé được chuyển vào tài khoản ngân hàng, thẻ ghi nợ, thẻ tín dụng, hoặc tài khoản mà hành khách sử dụng trong khi đặt vé.</li>
+                            <li>Lưu ý: Trường hợp hoàn lại tiền vào tài khoản ngân hàng, quý khách vui lòng gửi thông tin tài khoản ngân hàng đến <a href="mailto:lienhe@vexere.com">lienhe@vexere.com</a>. Chúng tôi không chịu trách nhiệm đối với các chi phí phát sinh từ giao dịch hoặc chuyển khoản tại ngân hàng của quý khách.</li>
+                            <li>Việc hoàn tiền sẽ được xử lý tự động khi hủy vé. Chúng tôi sẽ liên hệ với quý khách về việc hoàn tiền.</li>
+                            <li>Lưu ý: Thông thường sẽ cần vài ngày làm việc để quý khách nhận được tiền vào tài khoản của mình.</li>
+                            <li>Trong trường hợp quý khách không nhận được tiền trong vòng 10 ngày làm việc (kể từ ngày nhận được email của chúng tôi thông báo là tiền đã được gửi đi), hãy gửi email đến <a href="mailto:lienhe@vexere.com">lienhe@vexere.com</a> cùng với các chi tiết của vé để nhận được hỗ trợ từ bộ phận chăm sóc khách hàng.</li>
+                            <li>Phí giao dịch hoặc phí giao vé sẽ không được hoàn trả trong trường hợp khách hàng tự yêu cầu hủy vé.</li>
+                            <li>Trong trường hợp hãng xe hủy bỏ một chuyến xe hay dịch vụ, VeXeRe sẽ cố gắng hỗ trợ hành khách tìm dịch vụ thay thế tùy thuộc vào các lựa chọn sẵn có. Trong trường hợp không có dịch vụ thay thế nào, VeXeRe sẽ chỉ chịu trách nhiệm đối với hành khách đến mức hoàn trả lại số tiền mà hành khách đã thanh toán mua vé.</li>
+                            <li>Tiền sẽ không được hoàn lại trong trường hợp hành khách không có mặt tại điểm khởi hành đúng giờ.</li>
+                        </ol>
+                    </li>
+                    <li>Điều khoản áp dụng: nếu có nội dung nào chưa được quy định rõ ở đây, hoặc đối lập với bảng điều khoản & điều kiện ban hành và đăng tải trên website VeXeRe.com, được sửa đổi, bổ sung và thay thế theo thời gian, thì sẽ áp dụng theo Điều Khoản & Điều Kiện đăng tại trên website VeXeRe.com</li>
+                </ol>
+            </div>
+        </div>
+   </div>
+
+</body>
+</html>
+

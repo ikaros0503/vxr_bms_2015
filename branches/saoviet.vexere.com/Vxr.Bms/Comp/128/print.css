@@ -1,0 +1,244 @@
+﻿ul.coach {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	margin-top: 10px;
+}
+
+	/* ul.coach:nth-child(2) {
+		margin-left: 5px;		
+    } */
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .vcol-md-5 {
+    float: left;
+}
+.no-background {background:none !important;}
+.da-thanh-toan {background:black !important;color:white;}
+
+ul.coach li table {padding:0;}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-4 {
+    width: 33.3333%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.vcol-md-5 {
+    width: 20%;
+}
+
+.print-seat {
+    height: 66px;
+}
+
+    .print-seat table {
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        padding: 3px;
+    }
+
+        .print-seat table td {
+            padding-top: 0;
+            padding-bottom: 0;
+            vertical-align: top;
+        }
+
+.br {
+    border-right: 1px solid #000000;
+}
+
+.bb {
+    border-bottom: 1px solid #000000;
+}
+
+.print-seat p {
+    margin: 0;
+}
+
+.pseat-code {
+    width: 30%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    float: left;
+}
+
+.pseat-no {
+    font-weight: 400;
+    font-size: 12px !important;
+}
+
+.pcphone {
+    font-weight: 700;
+    font-size: 13px !important;
+    float: right;
+    width: 100%;
+    text-align: left;
+}
+
+.ppayment {
+    width: 70%;
+    float: right;
+    text-align: right;
+    /* background: #ddd; */
+	font-size:13.5px;
+	/* padding-right:2px; */
+}
+
+.pnote {
+    /*height: 20px;*/
+    /* overflow: hidden; */
+    clear: both;
+    text-transform: lowercase;
+	font-size:13px;
+	/*white-space:nowrap;*/
+}
+
+.ppickup span {
+    text-transform: lowercase;
+}
+
+.pmInfo {
+    text-align: right;
+}
+
+.print-title {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+strong.title {
+    text-transform: uppercase;
+}
+
+.pcname {
+    float: left;
+    width: 25%;
+	font-size:12px;
+	/* text-transform:lowercase; */
+	white-space:nowrap;
+	font-size:10px;
+	padding-top:2px;
+}
+
+.ntk-pertrip {
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.list {
+    clear: both;
+}
+
+    .list h3 {
+        text-align: center;
+    }
+
+    .list table, .list th, .list td {
+        border: 1px solid black;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .list table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .list p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+	
+/* ul.coach:nth-child(1) li:nth-child(24),
+ul.coach:nth-child(1) li:nth-child(25),
+ul.coach:nth-child(1) li:nth-child(26),
+ul.coach:nth-child(1) li:nth-child(27),
+ul.coach:nth-child(1) li:nth-child(28),
+ul.coach:nth-child(2) li:nth-child(24),
+ul.coach:nth-child(2) li:nth-child(25),
+ul.coach:nth-child(2) li:nth-child(26),
+ul.coach:nth-child(2) li:nth-child(27),
+ul.coach:nth-child(2) li:nth-child(28) {
+    height: 100px;
+} */
+
+/* ul.coach:nth-child(1) li:nth-child(24) .pcname,
+ul.coach:nth-child(1) li:nth-child(25) .pcname,
+ul.coach:nth-child(1) li:nth-child(26) .pcname,
+ul.coach:nth-child(1) li:nth-child(27) .pcname,
+ul.coach:nth-child(1) li:nth-child(28) .pcname,
+ul.coach:nth-child(2) li:nth-child(24) .pcname,
+ul.coach:nth-child(2) li:nth-child(25) .pcname,
+ul.coach:nth-child(2) li:nth-child(26) .pcname,
+ul.coach:nth-child(2) li:nth-child(27) .pcname,
+ul.coach:nth-child(2) li:nth-child(28) .pcname {
+	width:100%;
+} */
+
+/* ul.coach:nth-child(1) li:nth-child(24) .pcphone,
+ul.coach:nth-child(1) li:nth-child(25) .pcphone,
+ul.coach:nth-child(1) li:nth-child(26) .pcphone,
+ul.coach:nth-child(1) li:nth-child(27) .pcphone,
+ul.coach:nth-child(1) li:nth-child(28) .pcphone,
+ul.coach:nth-child(2) li:nth-child(24) .pcphone,
+ul.coach:nth-child(2) li:nth-child(25) .pcphone,
+ul.coach:nth-child(2) li:nth-child(26) .pcphone,
+ul.coach:nth-child(2) li:nth-child(27) .pcphone,
+ul.coach:nth-child(2) li:nth-child(28) .pcphone {
+	width:100%;
+	text-align:left;
+} */
+
+
+/* ul.coach:nth-child(1) li:nth-child(24) .pnote,
+ul.coach:nth-child(1) li:nth-child(25) .pnote,
+ul.coach:nth-child(1) li:nth-child(26) .pnote,
+ul.coach:nth-child(1) li:nth-child(27) .pnote,
+ul.coach:nth-child(1) li:nth-child(28) .pnote,
+ul.coach:nth-child(2) li:nth-child(24) .pnote,
+ul.coach:nth-child(2) li:nth-child(25) .pnote,
+ul.coach:nth-child(2) li:nth-child(26) .pnote,
+ul.coach:nth-child(2) li:nth-child(27) .pnote,
+ul.coach:nth-child(2) li:nth-child(28) .pnote {	
+	white-space:normal;
+} */
+
+/* ul.coach:nth-child(1) li:nth-child(20) {
+	overflow:hidden;
+}
+
+ul.coach:nth-child(1) li:nth-child(22),
+ul.coach:nth-child(1) li:nth-child(23),
+ul.coach:nth-child(2) li:nth-child(22),
+ul.coach:nth-child(2) li:nth-child(23) {
+	height:56px;	
+}
+
+ul.coach:nth-child(1) li:nth-child(22) .pcphone,
+ul.coach:nth-child(1) li:nth-child(23) .pcphone,
+ul.coach:nth-child(2) li:nth-child(22) .pcphone,
+ul.coach:nth-child(2) li:nth-child(23) .pcphone {
+	width: 40%;
+	text-align:right;	
+}
+
+ul.coach:nth-child(1) li:nth-child(22) .pnote,
+ul.coach:nth-child(1) li:nth-child(23) .pnote,
+ul.coach:nth-child(2) li:nth-child(22) .pnote,
+ul.coach:nth-child(2) li:nth-child(23) .pnote {
+	height:16px;	
+}
+ */

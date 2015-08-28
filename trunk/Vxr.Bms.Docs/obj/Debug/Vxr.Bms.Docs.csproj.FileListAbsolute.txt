@@ -1,0 +1,4 @@
+E:\VXR-PJ\trunk\Vxr.Bms.Docs\bin\Debug\Vxr.Bms.Docs.dll
+E:\VXR-PJ\trunk\Vxr.Bms.Docs\bin\Debug\Vxr.Bms.Docs.pdb
+E:\VXR-PJ\trunk\Vxr.Bms.Docs\obj\Debug\Vxr.Bms.Docs.dll
+E:\VXR-PJ\trunk\Vxr.Bms.Docs\obj\Debug\Vxr.Bms.Docs.pdb

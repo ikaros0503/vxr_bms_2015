@@ -1,0 +1,91 @@
+﻿#busManager {
+    min-height: 200px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#busManager div.header {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    padding: 5px;
+}
+
+#busManager h4 {
+    text-align: center;    
+}
+
+#busManager table {
+    width: 100%;
+    padding: 10px;
+}
+#busManager table tbody tr {
+    cursor: default;
+}
+#busManager td, th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding: 5px;
+}
+#busManager tbody td {
+    border-right: 1px solid #ddd;    
+}
+
+#busManager tbody td.isCancelled {
+    color: #a10621;
+    font-style: italic;
+}
+#busManager tr.selectedRow td.isCancelled {
+    color: yellow;
+    font-style: italic;
+}
+
+#busManager table tbody tr.selectedRow {
+    background-color: #1f8860 !important;
+    color: white;
+}
+#busManager table tbody tr.selectedRow a {
+    color: white;
+}
+
+#busManager a.btn-book{
+    cursor: pointer;
+    text-decoration: none;
+    background: #97b8dc;
+    padding: 5px 10px;
+    color: #182f48;
+}
+
+#busManager table tbody tr:nth-child(odd) {
+     background-color:#f4f4f4;
+}
+#busManager table tbody tr:nth-child(even) {
+     background-color:#eaeaea; 
+}
+#busManager table tbody tr:hover {
+    background-color: #7ee1bc;
+}
+
+#busManager thead {
+    font-weight: bold;
+    background-color: #cbcccc;
+}
+
+#busManager th.sub{
+    font-weight: normal;
+    font-size: 12px;
+    padding: 0px;
+    margin-top: -10px;
+}
+
+#busManager span.gray{
+    color: darkgray;
+}
+
+#busManager span.RouteTitle {
+    font-size: large;
+    background-color: #cbcccc;
+    color: #082a0a;
+    margin: 0px;
+    padding: 10px;
+}

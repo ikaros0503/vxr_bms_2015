@@ -1,0 +1,300 @@
+﻿
+.purples {
+    background-color: #966DBB !important;
+    color: #FFFFFF;
+    border: 1px solid #A98CAD !important;
+}
+
+    .purples p.seat-code {
+        color: #F7E6FF !important;
+    }
+
+    .purples .btn.active {
+        color: #FFE4F5;
+        border-color: #A98CAD;
+    }
+
+    .purples p.cname {
+        color: #FFF6FF;
+    }
+
+.blues {
+    background-color: #1e62a3 !important;
+    color: #d4eaff;
+    border: 1px solid #266fb4 !important;
+}
+
+    .blues p.seat-code {
+        color: #d4eaff !important;
+    }
+
+    .blues .btn.active {
+        color: #d4eaff;
+        border-color: #6381B6;
+    }
+
+    .blues p.cname {
+        color: #FFF6FF;
+    }
+
+.grays {
+    background-color: #4E4E4E !important;
+    color: #E0E0E0;
+    border: 1px solid #5E5E5E !important;
+}
+
+    .grays p.seat-code {
+        color: #E0E0E0 !important;
+    }
+
+    .grays .btn.active {
+        color: #E0E0E0;
+        border-color: #A8A8A8;
+    }
+
+    .grays p.cname {
+        color: #E0E0E0;
+    }
+
+div.search-location {
+    max-width: 515px;
+}
+
+div.search-result {
+    min-width: 200px;
+    display: inline-block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+    div.search-result .scrollable {
+        overflow-y: auto;
+        max-height: 183px;
+    }
+
+    div.search-result div.search-title, div.search-summary {
+        padding: 5px 15px;
+        font-weight: 200;
+        color: white;
+    }
+
+    div.search-result table {
+        background: white;
+        width: 100%;
+    }
+
+        div.search-result table td {
+            padding: 5px;
+        }
+
+            div.search-result table td.select {
+                background: gray;
+            }
+
+    div.search-result button.customer-profile.customer-profile-item {
+        position: relative;
+        float: right;
+        margin-top: 3px;
+    }
+
+    div.search-result .location-selected {
+        background: #7ce22b;
+        cursor: pointer;
+    }
+
+    div.search-result.r0.dropdown-menu {
+        right: 0;
+        left: inherit;
+    }
+
+div.upform-search-result-phone {
+    min-width: 200px;
+    display: inline-block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #ed9c28;
+    width: 267%;
+    padding-top: 5px;
+    font-weight: 600;
+}
+
+    div.upform-search-result-phone ul {
+        list-style: none outside none;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        max-height: 315px;
+        overflow-y: scroll;
+    }
+
+    div.upform-search-result-phone .scrollable {
+        overflow-y: auto;
+        max-height: 183px;
+    }
+
+    div.upform-search-result-phone div.search-title, div.search-summary {
+        padding: 5px 15px;
+        font-weight: 200;
+        color: white;
+    }
+
+    div.upform-search-result-phone table {
+        background: white;
+        width: 100%;
+    }
+
+        div.upform-search-result-phone table td {
+            padding: 5px;
+        }
+
+            div.upform-search-result-phone table td.select {
+                background: gray;
+            }
+
+    div.upform-search-result-phone .search-title {
+        padding: 5px 15px;
+    }
+
+    div.upform-search-result-phone .search-summary {
+        padding: 5px 15px;
+        margin-top: 5px !important;
+    }
+
+    div.upform-search-result-phone .search-title span {
+        position: relative;
+        float: right;
+        padding: 1px 6px;
+        margin: -3px -7px 3px 51px;
+        cursor: default;
+        border-radius: 3px;
+        background-color: #E05151;
+    }
+
+        div.upform-search-result-phone .search-title span:hover {
+            background-color: #f52525;
+        }
+
+    div.upform-search-result-phone .search-items li {
+        border-bottom: 1px solid #eee;
+        min-height: 35px;
+        line-height: 35px;
+        padding: 5px 15px;
+    }
+
+        div.upform-search-result-phone .search-items li:last-child {
+            border-bottom: none;
+        }
+
+        div.upform-search-result-phone .search-items li.selected {
+            background: #7ce22b;
+            cursor: pointer;
+        }
+
+        div.upform-search-result-phone .search-items li span.total {
+            color: #f75327;
+        }
+
+    div.upform-search-result-phone .not-found {
+        background: #fff;
+        margin: 0;
+        padding: 5px 15px;
+    }
+
+    div.upform-search-result-phone .search-items li p {
+        margin: 0;
+        padding: 0;
+        height: 20px;
+        line-height: 20px;
+    }
+
+        div.upform-search-result-phone .search-items li p:nth-child(2) {
+            padding-left: 25px;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+#notificationLink {
+    margin-right: 5px;
+    float: left;
+}
+
+#notification_count {
+    font-size: small;
+    background: #e71749;
+    padding: 2px 6px;
+    border-radius: 14px;
+    float: left;
+    color: white;
+    position: absolute;
+    right: 0px;
+}
+
+#notificationContainer {
+    background-color: #fff;
+    border: 1px solid rgba(100, 100, 100, .4);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    overflow: visible;
+    position: absolute;
+    top: 45px;
+    margin-left: -170px;
+    width: 300px;
+    z-index: 199;
+    display: none;
+}
+
+    #notificationContainer:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        color: transparent;
+        border: 10px solid black;
+        border-color: transparent transparent white;
+        margin-top: -20px;
+        margin-left: 188px;
+    }
+
+#notificationTitle {
+    z-index: 1000;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 13px;
+    background-color: #ffffff;
+    width: 284px;
+}
+
+#notificationsBody {
+    padding: 5px 5px 5px 5px !important;
+    list-style-type: none;
+    text-align: center;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+
+    #notificationsBody li {
+        padding: 10px;
+        border-top: solid 1px lightgray;
+    }
+
+        #notificationsBody li:hover {
+            background: #d1d1d1;
+        }
+
+        #notificationsBody li span.action {
+            font-weight: bold;
+            padding: 2px 10px;
+        }
+
+        #notificationsBody li span.data {
+        }
+
+#notificationFooter {
+    background-color: #e9eaed;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 12px;
+    border-top: 1px solid #dddddd;
+}

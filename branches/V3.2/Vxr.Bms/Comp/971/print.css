@@ -1,0 +1,305 @@
+﻿ul.coach {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	margin-top:-15px !important;
+}
+ul.SeatTemp43.coach li {overflow: hidden;}
+    /* ul.coach:nth-child(1) {
+        margin-right: 8px !important;
+    } */
+
+    ul.coach:nth-child(2) {
+        margin-top: 0;
+    }
+.cuser {white-space:nowrap;}
+.col-md-spec {
+    width: 15.5% !important;
+}
+
+.da-thanh-toan {
+    background: black !important;
+    color: white;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .vcol-md-5, .col-md-spec {
+    float: left;
+}
+
+.col-md-12 {
+    width: 100%;
+	/* margin-top: -21px; */
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-4 {
+    width: 33.3333%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.vcol-md-5 {
+    width: 20%;
+}
+
+.print-seat {
+    height: 110px;
+}
+.SeatTemp47 .print-seat {
+    height: 102px;
+}
+    .print-seat table {
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        padding: 0;
+    }
+
+        .print-seat table td {
+            padding-top: 0;
+            padding-bottom: 0;
+            vertical-align: top;
+        }
+
+.br {
+    border-right: 1px solid #000000;
+}
+
+.bb {
+    border-bottom: 1px solid #000000;
+}
+
+.print-seat p {
+    margin: 0;
+}
+
+.pseat-code {
+    width: 18%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    float: right;
+	text-align: center;
+	padding-right:5px;
+}
+.SeatTemp47 .pseat-code {
+    width: 18%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    float: right;
+	text-align: center;
+	padding-right:5px;
+}
+.tt {width:82%;}
+
+.pseat-no {
+    font-weight: 400;
+    font-size: 12px !important;
+}
+
+.pcphone {
+    /* font-weight: 700; */
+    font-size: 16px !important;
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-top: -3px !important;
+}
+
+.ppayment {
+    width: 85%;
+    float: right;
+    text-align: right;
+}
+
+.pnote {
+    height: 20px;
+    /* text-transform: lowercase; */
+    margin: -15px 0;
+    line-height: 16px;
+    width: 100%;
+    font-size: 14px;
+	margin-top: -5px !important;
+	/* white-space:nowrap; */
+}
+.ghichu {font-size: 14px; white-space: nowrap;margin-top:9px !important;}
+.SeatTemp47 .ghichu {font-size: 14px;white-space: nowrap;margin-top:4px !important;}
+.ppickup span {
+    text-transform: lowercase;
+}
+
+.pmInfo {
+    text-align: right;
+}
+
+.print-title {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+strong.title {
+    text-transform: uppercase;
+}
+
+.pcname {
+	text-align: left;
+    float: left;
+    width: 100%;
+    font-size: 14px !important;
+    /* margin-top: 4px !important; */
+}
+
+.ntk-pertrip {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.list {
+    clear: both;
+}
+
+    .list h3 {
+        text-align: center;
+    }
+
+    .list table, .list th, .list td {
+        border: 1px solid black;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .list table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .list p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+.print-noseat {
+    height: 102px;
+    width: 23px !important;
+}
+
+/*ul.coach:nth-child(1) li:nth-child(19), ul.coach:nth-child(1) li:nth-child(22) {
+    border-bottom: 1px solid #000;
+}*/
+
+ul.coach:nth-child(1) li:nth-child(9), ul.coach:nth-child(1) li:nth-child(17),
+ul.coach:nth-child(1) li:nth-child(25), ul.coach:nth-child(1) li:nth-child(33),
+ul.coach:nth-child(1) li:nth-child(41), ul.coach:nth-child(1) li:nth-child(65) {
+    clear: both;
+}
+ul.coach:nth-child(1) li:nth-child(2), ul.coach:nth-child(1) li:nth-child(5),
+ul.coach:nth-child(1) li:nth-child(10), ul.coach:nth-child(1) li:nth-child(13),
+ul.coach:nth-child(1) li:nth-child(18), ul.coach:nth-child(1) li:nth-child(21),
+ul.coach:nth-child(1) li:nth-child(26), ul.coach:nth-child(1) li:nth-child(29),
+ul.coach:nth-child(1) li:nth-child(34), ul.coach:nth-child(1) li:nth-child(37) {
+    border-right: 1px solid #000;
+}
+
+
+ul.coach:nth-child(1) li:nth-child(41), ul.coach:nth-child(1) li:nth-child(42),
+ul.coach:nth-child(1) li:nth-child(43), ul.coach:nth-child(1) li:nth-child(44),
+ul.coach:nth-child(1) li:nth-child(45), ul.coach:nth-child(1) li:nth-child(49),
+ul.coach:nth-child(1) li:nth-child(50), ul.coach:nth-child(1) li:nth-child(51),
+ul.coach:nth-child(1) li:nth-child(52), ul.coach:nth-child(1) li:nth-child(53) {
+    width: 20% !important;
+	height: 110px !important;
+}
+.SeatTemp47.coach:nth-child(1) li:nth-child(65) {
+    clear: both;
+}
+.SeatTemp47.coach:nth-child(1) li:nth-child(65), .SeatTemp47.coach:nth-child(1) li:nth-child(66), .SeatTemp47.coach:nth-child(1) li:nth-child(67) {
+    width: 145px !important;
+	
+}
+.SeatTemp47.coach:nth-child(1) li:nth-child(65) table, .SeatTemp47.coach:nth-child(1) li:nth-child(66) table, .SeatTemp47.coach:nth-child(1) li:nth-child(67) table {
+   
+	border-top: 0px !important;
+}
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(57) table, ul.SeatTemp47.coach:nth-child(1) li:nth-child(58) table,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(59) table, ul.SeatTemp47.coach:nth-child(1) li:nth-child(60) table {
+    border-bottom: 1px solid #000 ;
+}
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(41), ul.SeatTemp47.coach:nth-child(1) li:nth-child(42),
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(43), ul.SeatTemp47.coach:nth-child(1) li:nth-child(44),
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(45), ul.SeatTemp47.coach:nth-child(1) li:nth-child(49),
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(50), ul.SeatTemp47.coach:nth-child(1) li:nth-child(51),
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(52), ul.SeatTemp47.coach:nth-child(1) li:nth-child(53) {
+    width: 20% !important;
+	height: 92px !important;
+}
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(41) .ghichu, ul.SeatTemp47.coach:nth-child(1) li:nth-child(42) .ghichu,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(43) .ghichu, ul.SeatTemp47.coach:nth-child(1) li:nth-child(44) .ghichu,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(45) .ghichu, ul.SeatTemp47.coach:nth-child(1) li:nth-child(49) .ghichu,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(50) .ghichu, ul.SeatTemp47.coach:nth-child(1) li:nth-child(51) .ghichu,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(52) .ghichu, ul.SeatTemp47.coach:nth-child(1) li:nth-child(53) .ghichu {
+    margin-top: -6px !important;
+}
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(41) .pnote, ul.SeatTemp47.coach:nth-child(1) li:nth-child(42) .pnote,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(43) .pnote, ul.SeatTemp47.coach:nth-child(1) li:nth-child(44) .pnote,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(45) .pnote, ul.SeatTemp47.coach:nth-child(1) li:nth-child(49) .pnote,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(50) .pnote, ul.SeatTemp47.coach:nth-child(1) li:nth-child(51) .pnote,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(52) .pnote, ul.SeatTemp47.coach:nth-child(1) li:nth-child(53) .pnote,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(57) .pnote, ul.SeatTemp47.coach:nth-child(1) li:nth-child(58) .pnote,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(59) .pnote, ul.SeatTemp47.coach:nth-child(1) li:nth-child(60) .pnote {
+    white-space: nowrap;
+}
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(57) .ghichu, ul.SeatTemp47.coach:nth-child(1) li:nth-child(58) .ghichu,
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(59) .ghichu, ul.SeatTemp47.coach:nth-child(1) li:nth-child(60) .ghichu {
+    margin-top: -8px !important;
+}
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(57), ul.SeatTemp47.coach:nth-child(1) li:nth-child(58),
+ul.SeatTemp47.coach:nth-child(1) li:nth-child(59), ul.SeatTemp47.coach:nth-child(1) li:nth-child(60) {
+    width: 25% !important;
+	height: 92px !important;
+}
+ul.coach:nth-child(1) li:nth-child(41) .ghichu, ul.coach:nth-child(1) li:nth-child(42) .ghichu,
+ul.coach:nth-child(1) li:nth-child(43) .ghichu, ul.coach:nth-child(1) li:nth-child(44) .ghichu,
+ul.coach:nth-child(1) li:nth-child(45) .ghichu, ul.coach:nth-child(1) li:nth-child(49) .ghichu,
+ul.coach:nth-child(1) li:nth-child(50) .ghichu, ul.coach:nth-child(1) li:nth-child(51) .ghichu,
+ul.coach:nth-child(1) li:nth-child(52) .ghichu, ul.coach:nth-child(1) li:nth-child(53) .ghichu {
+    margin-top: 9px !important;
+}
+ul.coach:nth-child(1) li:nth-child(52) table, ul.coach:nth-child(1) li:nth-child(53) table {border-bottom:1px solid #000;}
+ul.coach:nth-child(1) li:nth-child(57), ul.coach:nth-child(1) li:nth-child(58),
+ul.coach:nth-child(1) li:nth-child(59), ul.coach:nth-child(1) li:nth-child(60) {
+    width: 20% !important;
+}
+ul.coach:nth-child(1) li:nth-child(57), ul.coach:nth-child(1) li:nth-child(58),
+ul.coach:nth-child(1) li:nth-child(59), ul.coach:nth-child(1) li:nth-child(60) {
+   height: 110px !important;
+}
+ul.coach:nth-child(1) li:nth-child(57) .ghichu, ul.coach:nth-child(1) li:nth-child(58) .ghichu,
+ul.coach:nth-child(1) li:nth-child(59) .ghichu, ul.coach:nth-child(1) li:nth-child(60) .ghichu {
+   margin-top:9px !important;
+}
+/* ul.coach:nth-child(1) li:nth-child(57) .tt, ul.coach:nth-child(1) li:nth-child(58) .tt,
+ul.coach:nth-child(1) li:nth-child(59) .tt, ul.coach:nth-child(1) li:nth-child(60) .tt {
+    display: none !important;
+} */
+ul.coach:nth-child(1) li:nth-child(57) table tr:nth-child(3), ul.coach:nth-child(1) li:nth-child(58) table tr:nth-child(3),
+ul.coach:nth-child(1) li:nth-child(59) table tr:nth-child(3), ul.coach:nth-child(1) li:nth-child(60) table tr:nth-child(3) {
+   height: 20px !important;
+}
+ul.coach:nth-child(1) li:nth-child(46), ul.coach:nth-child(1) li:nth-child(47),
+ul.coach:nth-child(1) li:nth-child(48), ul.coach:nth-child(1) li:nth-child(54),
+ul.coach:nth-child(1) li:nth-child(55), ul.coach:nth-child(1) li:nth-child(56) {
+    display: none;
+}
+ul.coach:nth-child(1) li:nth-child(61), ul.coach:nth-child(1) li:nth-child(62),
+ul.coach:nth-child(1) li:nth-child(63), ul.coach:nth-child(1) li:nth-child(64) {
+    display: none;
+}

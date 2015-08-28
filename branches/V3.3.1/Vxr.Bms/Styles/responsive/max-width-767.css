@@ -1,0 +1,114 @@
+﻿/* For tablet-portrait */
+
+@media only screen and (max-width :767px) {
+}
+
+    #update-popup .modal-lg {
+        width: 90%;
+    }
+
+    #FilterForm button {
+        margin-bottom: 8px;
+    }
+
+    #update-popup .col-sm-4 {
+        width: 50%;
+    }
+
+    #update-popup label.col-sm-4 {
+        width: 33.33333333%;
+        padding-right: 5px;
+    }
+
+    /*.btn-print, .danhsach{margin-top:10px !important;}*/
+    #bs-example-navbar-collapse-1 {
+        border: 0 !important;
+    }
+
+    .mb5-xs {
+        margin-bottom: 5px;
+    }
+
+    .select-bus {
+        padding-right: 0 !important;
+    }
+
+    .coach-l {
+        padding-right: 0 !important;
+    }
+
+    .coach-r {
+        padding-left: 0 !important;
+    }
+
+    .bookig-seat {
+        margin-top: 10px;
+    }
+
+    .form-search {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0 !important;
+        background: #fff;
+    }
+
+    .pick, .note {
+        font-size: 12px !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+    }
+
+    .filter {
+        padding-bottom: 10px;
+        padding-right: 15px;
+    }
+
+    .btn-filter {
+        padding-right: 0;
+    }
+
+    .filter .panel {
+        padding-right: 0;
+        background: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding-bottom: 0;
+    }
+
+    .gio-chay {
+        padding-left: 0 !important;
+    }
+
+    .modal-new-width {
+        width: 98%;
+    }
+
+    .responsive-xs-l {
+        padding-left: 0;
+    }
+
+    .responsive-xs-r {
+        padding-right: 0;
+    }
+
+    .ngay-chay {
+        padding-right: 20px;
+    }
+    /*.btn-print, .danhsach{margin-top:10px !important;}*/
+ 
+    .navbar .HomeTopSearch{
+        display:none;
+    }
+    .dropdown.danhsach{
+        margin-right:15px;
+    }
+     a.input-group-addon{
+        padding: 6px 12px !important;
+    }    
+     .search-result {
+        width:90vw !important;
+    }
+
+     
+}

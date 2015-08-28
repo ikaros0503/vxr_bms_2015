@@ -1,0 +1,53 @@
+﻿.filter {
+   padding-top: 0;
+   margin-bottom: 0;
+   background:none !important;
+}
+
+    .filter .panel {
+        padding-top: 5px;
+        margin-bottom: 5px;
+        background:none;
+    }
+
+    .filter .form-group {
+        margin-bottom: 5px;
+        background:none;
+    }
+
+
+.btn-filter {
+    padding-right: 0;
+}
+
+.panel{
+    border-radius:0 !important;
+}
+
+#HomeTopSearch{
+    padding-left:31px;
+}
+
+#HomeTopSearch .form-search{
+    background:none;
+}
+
+.bs-callout-primary{
+    border-right:none !important;
+    border-top:none !important;
+    border-bottom:none !important;
+    border-radius:0 !important;
+}
+
+.btn.circle.active{
+    -webkit-box-shadow:none !important;
+    box-shadow:none !important;
+}
+
+.btn.circle.active:hover{
+    background:rgba(0,0,0,0.02)
+}
+
+.dropdown.danhsach{
+    margin-left:5px;
+}

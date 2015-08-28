@@ -1,0 +1,20 @@
+﻿.filter {
+   padding-top: 0;
+    margin-bottom: 0;
+}
+
+    .filter .panel {
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .filter .form-group {
+        margin-bottom: 5px;
+    }
+
+
+.btn-filter {
+    padding-right: 0;
+}
+
+

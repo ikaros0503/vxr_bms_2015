@@ -1,0 +1,13 @@
+﻿anh đang review lại js của nhaxe, có nhiều vấn đề sử dụng single page
+http://ozkatz.github.io/8-ways-to-make-your-single-page-web-app-faster.html
+#8
+càng đơn giản càng tốt, cố gắng tách hoàn toàn chức năng đặt vé ra giúp anh
+có khi phải tách hẳn ra domain riêng cho đặt vé, còn report hay các thứ liên quan thì cho qua 1 bên
+
+report cũng tach riêng ra từng report nhé
+chứ gộp chung lại như vầy
+sửa or thêm 1 report
+mà mí reports còn lại cũng bị lỗi luôn?
+
+tối qua anh gửi so sánh các webserver, vì mình xác định viết js nên em cân nhắc có chọn IIS hông nhé
+ko thì múc luôn sử dụng mấy thằng performance tốt luôn

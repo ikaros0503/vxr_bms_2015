@@ -1,0 +1,54 @@
+﻿#compKeyword {
+    
+    /*height: 30px;
+     padding-left: 5px;*/
+}
+
+.agentRouteName {
+    font-weight: bold;
+}
+
+.agentRouteCompName {
+    color: #999999
+}
+
+#agtComps .jtable-data-row {
+    cursor: pointer !important
+}
+
+#agtTrips .jtable-data-row {
+    cursor: pointer !important
+}
+
+.hidden-border {
+    border-width: 0 !important;
+    border-color: #ffffff !important;
+    background-color: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.compListFilterPanel {
+    /* margin-top: 10px;*/
+    margin-right: 0;
+    margin-left: -25px;
+    float: left;
+}
+
+#routeKeyword {
+    width: 193px;
+    height: 30px;
+    margin-right: -26px;
+    padding-left: 5px;
+}
+
+#routeKeywordIcon {
+    margin-right: -26px;
+}
+
+.routeListFilterPanel {
+    /*margin-top: 10px;*/
+    margin-left: 0 !important;
+    float: right;
+}
+

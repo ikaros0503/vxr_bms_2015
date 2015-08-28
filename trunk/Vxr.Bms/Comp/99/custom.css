@@ -1,0 +1,6 @@
+﻿
+.seat[data-position='1_6_3'] .available, .seat[data-position='1_7_2'] .available, .seat[data-position='1_7_4'] .available,
+.seat[data-position='2_6_3'] .available, .seat[data-position='2_7_2'] .available, .seat[data-position='2_7_4'] .available {
+    background: #CDDFFF;
+}
+

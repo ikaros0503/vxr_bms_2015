@@ -1,0 +1,17 @@
+﻿.silver {
+    color: silver;
+}
+
+.green {
+    color: green;
+}
+
+.ui-widget-content {
+    border: 1px solid #1e62a3;
+}
+
+    .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+        border: 1px solid #1e62a3;
+        color: #fff;
+        background: #1e62a3;
+    }

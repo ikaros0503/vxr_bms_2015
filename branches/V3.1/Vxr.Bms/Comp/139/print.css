@@ -1,0 +1,190 @@
+﻿ul.coach {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	width: 100%; 
+	
+	/* nam ngang moi chinh width */
+}
+ul.coach:nth-child(2) {
+	margin-top: 13px;
+}
+.no-background {background:none !important;}
+.da-thanh-toan {background:black !important;color:white;}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .vcol-md-5 {
+    float: left;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-4 {
+    width: 33.3333%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.vcol-md-5 {
+    width: 20%;
+}
+
+.print-seat {
+    height: 64px;
+}
+
+    .print-seat table {
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        /* padding: 3px; */
+    }
+
+        .print-seat table td {
+            padding-top: 0;
+            padding-bottom: 0;
+            vertical-align: top;
+        }
+
+.br {
+    border-right: 1px solid #000000;
+}
+
+.bb {
+    border-bottom: 1px solid #000000;
+}
+
+.print-seat p {
+    margin: 0;
+}
+
+.pseat-code {
+    width: 30%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    float: left;		
+}
+
+
+.pseat-no {
+    font-weight: 400;
+    font-size: 12px !important;
+}
+
+.pcphone {
+    /* font-weight: 700;*/
+    font-size: 14px !important; 
+    float: right;
+    width: 50%;
+    /* text-align: right; */
+}
+
+.ppayment {
+    width: 70%;
+    float: right;
+    text-align: right;
+    background: #ddd;
+}
+
+.pnote {
+    /* height: 20px; */
+    /*overflow: hidden;*/
+    /* clear: both; */
+    text-transform: lowercase;
+	margin: -15px 0;
+	line-height: 11px;
+	width: 100%;
+}
+
+.ppickup span {
+    text-transform: lowercase;
+}
+
+.pmInfo {
+    text-align: right;
+}
+
+.print-title {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+strong.title {
+    text-transform: uppercase;
+}
+
+.pcname {
+    float: left;
+    width: 50%;
+	font-size: 14px !important;
+	text-transform: lowercase;
+}
+
+.ntk-pertrip {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.list {
+    clear: both;
+}
+
+    .list h3 {
+        text-align: center;
+    }
+
+    .list table, .list th, .list td {
+        border: 1px solid black;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .list table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .list p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }	
+		
+		ul.coach:nth-child(1) li:nth-child(16) table, ul.coach:nth-child(2) li:nth-child(16) table {
+			float: right;
+			width: 33.3333%;	
+		}
+		ul.coach:nth-child(1) li:nth-child(17) table, ul.coach:nth-child(2) li:nth-child(17) table {
+			clear: both;
+		}		
+		
+		ul.coach:nth-child(1) li:nth-child(13) table, ul.coach:nth-child(1) li:nth-child(14) table,
+		ul.coach:nth-child(2) li:nth-child(13) table, ul.coach:nth-child(2) li:nth-child(14) table {
+			border-bottom: 1px solid #000000;
+		} 
+		
+		ul.coach:nth-child(1) li:nth-child(17), ul.coach:nth-child(1) li:nth-child(18), ul.coach:nth-child(1) li:nth-child(19), ul.coach:nth-child(1) li:nth-child(20), ul.coach:nth-child(1) li:nth-child(21),
+		ul.coach:nth-child(2) li:nth-child(17), ul.coach:nth-child(2) li:nth-child(18), ul.coach:nth-child(2) li:nth-child(19), ul.coach:nth-child(2) li:nth-child(20), ul.coach:nth-child(2) li:nth-child(21) {
+			height: 80px;
+		}		
+		
+		ul.coach:nth-child(1) li:nth-child(17) table .pcname, ul.coach:nth-child(1) li:nth-child(18) table .pcname, ul.coach:nth-child(1) li:nth-child(19) table .pcname, ul.coach:nth-child(1) li:nth-child(20) table .pcname, ul.coach:nth-child(1) li:nth-child(21) table .pcname,
+		ul.coach:nth-child(2) li:nth-child(17) table .pcname, ul.coach:nth-child(2) li:nth-child(18) table .pcname, ul.coach:nth-child(2) li:nth-child(19) table .pcname, ul.coach:nth-child(2) li:nth-child(20) table .pcname, ul.coach:nth-child(2) li:nth-child(21) table .pcname {
+			width:100%;
+		}
+		
+		ul.coach:nth-child(1) li:nth-child(17) table .pcphone, ul.coach:nth-child(1) li:nth-child(18) table .pcphone, ul.coach:nth-child(1) li:nth-child(19) table .pcphone, ul.coach:nth-child(1) li:nth-child(20) table .pcphone, ul.coach:nth-child(1) li:nth-child(21) table .pcphone,
+		ul.coach:nth-child(2) li:nth-child(17) table .pcphone, ul.coach:nth-child(2) li:nth-child(18) table .pcphone, ul.coach:nth-child(2) li:nth-child(19) table .pcphone, ul.coach:nth-child(2) li:nth-child(20) table .pcphone, ul.coach:nth-child(2) li:nth-child(21) table .pcphone {
+			width:100%;
+			text-align: left;
+		}	
+		

@@ -1,0 +1,17 @@
+﻿#Submit1 {
+  background: #0277bd;
+  border: none;
+}
+input,
+button {
+  border-radius: 0 !important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  outline: none !important;
+}
+.navbar {
+  background: #0277bd;
+  text-align: center;
+}
+/*# sourceMappingURL=login.css.map */

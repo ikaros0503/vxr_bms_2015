@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72256E66-AC6C-4719-AD16-C9EB7D2D9608}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vxr.Bms.Docs</RootNamespace>
+    <AssemblyName>Vxr.Bms.Docs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Db\Account.docx" />
+    <None Include="Db\Area.docx" />
+    <None Include="Db\Bus_Ticket_Status.docx" />
+    <None Include="Db\Company.docx" />
+    <None Include="Db\Contract.docx" />
+    <None Include="Db\Customer.docx" />
+    <None Include="Db\Event.docx" />
+    <None Include="Db\Person.docx" />
+    <None Include="Db\Product.docx" />
+    <None Include="Db\ProductOrder.docx" />
+    <None Include="Db\Resource.docx" />
+    <None Include="Db\Rights.docx" />
+    <None Include="Db\Ticket.docx" />
+    <None Include="Db\Trade.docx" />
+    <None Include="Db\Trip.docx" />
+    <None Include="Db\Vehicle.docx" />
+    <None Include="Db\Vxr.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Idea\Backlog.txt" />
+    <Content Include="Queue\RabbitQueue.txt" />
+    <Content Include="Sql\Functions\CheckValueInBase2.sql" />
+    <Content Include="Sql\Functions\ConvertToBase.sql" />
+    <Content Include="Sql\Functions\GetAreaIdFromInfo.sql" />
+    <Content Include="Sql\Functions\GetFareFromInfo.sql" />
+    <Content Include="Sql\Functions\GetVAppText.sql" />
+    <Content Include="Sql\Functions\GetVBookingText.sql" />
+    <Content Include="Sql\Functions\GetVPaymentText.sql" />
+    <Content Include="Sql\Functions\HasOfflineConfig.sql" />
+    <Content Include="Sql\Functions\HasOnlineConfig.sql" />
+    <Content Include="Sql\Indexes\IDX_Trip.sql" />
+    <Content Include="Sql\Stores\LoadTrips.sql" />
+    <Content Include="Sql\Stores\LoadTripsTest.sql" />
+    <Content Include="Sql\Types\VTrips.sql" />
+    <Content Include="Sql\Views\zgcl_Trip06.sql" />
+    <Content Include="Sql\Views\zgcl_Trip07.sql" />
+    <Content Include="Sql\Vxr.Bms.Index.sql" />
+    <Content Include="Sql\Vxr.Bms.Rename.sql" />
+    <Content Include="Sql\Vxr.Bms.Test.sql" />
+    <Content Include="Sql\Vxr.Company.Trigger.sql" />
+    <Content Include="Sql\Vxr.Keywords.Function.sql" />
+    <Content Include="Sql\Vxr.Trip.Trigger.sql" />
+    <Content Include="Sql\Vxr.UnsignText.Function.sql" />
+    <Content Include="Stores\Vxr.LoadBms.sql" />
+    <Content Include="Temp\add role groups to account.sql" />
+    <Content Include="Temp\deploy 1.sql" />
+    <Content Include="Temp\script nhaxe.sql" />
+    <Content Include="Temp\20150213_update trip.sql" />
+    <Content Include="Temp\20150214 _fromid-toid trip.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

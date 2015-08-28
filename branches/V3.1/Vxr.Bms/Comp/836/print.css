@@ -1,0 +1,141 @@
+﻿.da-thanh-toan {background:black !important;color:white;}
+
+ul.coach { list-style: none; margin: 0; padding: 0; } 
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .vcol-md-5 { float: left; } 
+.col-md-12 { width: 100%; } 
+.col-md-6 {width: 50%;} 
+.col-md-4 {width: 33.3333%;} 
+.col-md-3 {width: 25%;} 
+.vcol-md-5 {width: 20%;}
+.print-seat {height: 70px;} 
+.print-seat table {width: 100%; height: 100%;border-top: 1px solid #000000;border-left: 1px solid #000000; padding: 0;} 
+.print-seat table td {padding-top: 0;padding-bottom: 0;vertical-align: top;} .br {border-right: 1px solid #000000;} 
+.bb {border-bottom: 1px solid #000000;} 
+.print-seat p {margin: 0;font-size: 12px;line-height: 16px;}
+.pseat-code {width: 15%;font-weight: 700;text-transform: uppercase;font-size: 14px !important;float: left;}
+.pseat-no {font-weight: 400;font-size: 14px !important;}
+.pcphone {font-weight: 700;}
+.ppickup {width: 85%;float: right;text-align: right;font-size:16px !important;} 
+.pnote {height: 20px; overflow: hidden;}
+.print-title {width: 100%; margin-bottom: 10px;} 
+strong.title { text-transform: uppercase;} 
+.pcname {float: left; width: 50%; font-size: 18px !important} 
+.pcphone {float: right; width: 50%; text-align: right; font-size: 17px !important} 
+.pcname .ntk-pertrip {text-transform: uppercase; font-size: 15px !important}
+.list h3 {text-align: center;} 
+.list table, .list th, .list td {border: 1px solid black;text-align: center;line-height: 28px; } 
+.list table {border-collapse: collapse;width: 100%;}
+.list p {text-align: center;text-transform: uppercase;font-weight: 700;} 
+.paid {/*background: #b7b7b7;*/background: none;} .exported {/*background: #b7b7b7;*/}
+
+ul.coach:nth-child(2) li:nth-child(1) table, ul.coach:nth-child(2) li:nth-child(2) table, ul.coach:nth-child(2) li:nth-child(3) table {
+    border-top: 0;  
+	}
+ul.SeatTemp53 .ppickup {width: 85%;float: right;text-align: right;font-size:16px !important;white-space:nowrap;} 
+ul.SeatTemp56 .ppickup {width: 85%;float: right;text-align: right;font-size:16px !important;white-space:nowrap; overflow: hidden;}
+ul.SeatTemp56.coach li:nth-child .ppickup {overflow:hidden;}
+ul.SeatTemp53 .pcphone {float: right; width: 60%; text-align: left; font-size: 17px !important;} 
+ul.SeatTemp53 .pcname {width: 40% !important;}
+ul.SeatTemp53 .pnote {height: 14px !important; overflow: hidden; line-height: 14px !important;}
+ul.SeatTemp53.coach li {overflow:hidden;}
+ul.SeatTemp53.coach:nth-child(2) li:nth-child(9) {
+    /* height: 110px !important; */
+   width: 33.3333% !important;
+   clear: both;
+	}
+ ul.SeatTemp53.coach:nth-child(2) li:nth-child(5) table{border-bottom: 1px solid #000000;}
+ul.SeatTemp53.coach:nth-child(2) li:nth-child(7) table{border-right: 1px solid #000000;} 
+ul.SeatTemp53.coach:nth-child(2) li:nth-child(8) {
+    width: 33.3333%% !important;
+	/* float: right; */
+	margin-left:230px !important;
+	border-bottom: 1px solid #000000;
+	}
+
+.SeatTemp53.coach:nth-child(2) li:nth-child(7) {
+       width: 33.3333%% !important;
+		/* float: right; 
+	 margin-left: 239px !important; */
+	}
+
+.SeatTemp53 .print-seat {
+    height: 54px;
+}
+.SeatTemp53.coach:nth-child(2) li:nth-child(10) {clear: both;}
+
+.SeatTemp53.coach:nth-child(2) li:nth-child(13), .SeatTemp53.coach:nth-child(2) li:nth-child(17), .SeatTemp53.coach:nth-child(2) li:nth-child(21), .SeatTemp53.coach:nth-child(2) li:nth-child(12), .SeatTemp53.coach:nth-child(2) li:nth-child(11), .SeatTemp53.coach:nth-child(2) li:nth-child(10),
+.SeatTemp53.coach:nth-child(2) li:nth-child(14), .SeatTemp53.coach:nth-child(2) li:nth-child(18), .SeatTemp53.coach:nth-child(2) li:nth-child(22), .SeatTemp53.coach:nth-child(2) li:nth-child(25), .SeatTemp53.coach:nth-child(2) li:nth-child(28), 
+.SeatTemp53.coach:nth-child(2) li:nth-child(15), .SeatTemp53.coach:nth-child(2) li:nth-child(19), .SeatTemp53.coach:nth-child(2) li:nth-child(23), .SeatTemp53.coach:nth-child(2) li:nth-child(26), .SeatTemp53.coach:nth-child(2) li:nth-child(29), 
+.SeatTemp53.coach:nth-child(2) li:nth-child(16), .SeatTemp53.coach:nth-child(2) li:nth-child(20), .SeatTemp53.coach:nth-child(2) li:nth-child(24), .SeatTemp53.coach:nth-child(2) li:nth-child(27)  {
+     /* width:100% !important; */
+	  height: 75px !important;
+	}
+.SeatTemp53.coach:nth-child(2) li:nth-child(13) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(17) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(21) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(12) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(11) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(10) .pcphone,
+.SeatTemp53.coach:nth-child(2) li:nth-child(14) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(18) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(22) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(25) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(28) .pcphone, 
+.SeatTemp53.coach:nth-child(2) li:nth-child(15) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(19) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(23) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(26) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(29) .pcphone, 
+.SeatTemp53.coach:nth-child(2) li:nth-child(16) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(20) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(24) .pcphone, .SeatTemp53.coach:nth-child(2) li:nth-child(27) .pcphone  {
+     width:100% !important;
+	 
+	}
+
+
+.SeatTemp56 .print-seat {
+    height: 62.5px;
+}
+.SeatTemp56 .pnote {height: 15px !important;}
+.SeatTemp56 .pcphone {height: 15px !important;}
+.SeatTemp56.coach:nth-child(2) li:nth-child(13) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(17) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(21) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(30) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(31) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(32) .pcphone,
+.SeatTemp56.coach:nth-child(2) li:nth-child(14) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(18) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(22) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(25) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(28) .pcphone, 
+.SeatTemp56.coach:nth-child(2) li:nth-child(15) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(19) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(23) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(26) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(29) .pcphone, 
+.SeatTemp56.coach:nth-child(2) li:nth-child(16) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(20) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(24) .pcphone, .SeatTemp56.coach:nth-child(2) li:nth-child(27) .pcphone  {
+     width:100% !important;
+	 float: left !important;
+	 text-align: left !important;
+	 height: 15px !important;
+	}
+.SeatTemp56.coach:nth-child(2) li:nth-child(13) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(17) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(21) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(30) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(31) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(32) .pcname,
+.SeatTemp56.coach:nth-child(2) li:nth-child(14) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(18) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(22) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(25) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(28) .pcname, 
+.SeatTemp56.coach:nth-child(2) li:nth-child(15) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(19) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(23) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(26) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(29) .pcname, 
+.SeatTemp56.coach:nth-child(2) li:nth-child(16) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(20) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(24) .pcname, .SeatTemp56.coach:nth-child(2) li:nth-child(27) .pcname  {
+     width: 85% !important;
+	
+	}
+.SeatTemp56.coach:nth-child(2) li:nth-child(13) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(17) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(21) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(30) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(31) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(32) .ppickup,
+.SeatTemp56.coach:nth-child(2) li:nth-child(14) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(18) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(22) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(25) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(28) .ppickup, 
+.SeatTemp56.coach:nth-child(2) li:nth-child(15) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(19) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(23) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(26) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(29) .ppickup, 
+.SeatTemp56.coach:nth-child(2) li:nth-child(16) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(20) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(24) .ppickup, .SeatTemp56.coach:nth-child(2) li:nth-child(27) .ppickup  {
+     width: 100% !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	}
+
+.SeatTemp56.coach:nth-child(2) li:nth-child(13), .SeatTemp56.coach:nth-child(2) li:nth-child(17), .SeatTemp56.coach:nth-child(2) li:nth-child(21), .SeatTemp56.coach:nth-child(2) li:nth-child(30), .SeatTemp56.coach:nth-child(2) li:nth-child(31), .SeatTemp56.coach:nth-child(2) li:nth-child(32),
+.SeatTemp56.coach:nth-child(2) li:nth-child(14), .SeatTemp56.coach:nth-child(2) li:nth-child(18), .SeatTemp56.coach:nth-child(2) li:nth-child(22), .SeatTemp56.coach:nth-child(2) li:nth-child(25), .SeatTemp56.coach:nth-child(2) li:nth-child(28), 
+.SeatTemp56.coach:nth-child(2) li:nth-child(15), .SeatTemp56.coach:nth-child(2) li:nth-child(19), .SeatTemp56.coach:nth-child(2) li:nth-child(23), .SeatTemp56.coach:nth-child(2) li:nth-child(26), .SeatTemp56.coach:nth-child(2) li:nth-child(29), 
+.SeatTemp56.coach:nth-child(2) li:nth-child(16), .SeatTemp56.coach:nth-child(2) li:nth-child(20), .SeatTemp56.coach:nth-child(2) li:nth-child(24), .SeatTemp56.coach:nth-child(2) li:nth-child(27)  {
+    height: 95px !important;
+	}
+.SeatTemp50 .pcname {width: 60% !important; margin-top:2px;}
+.SeatTemp50 .pcphone {width: 40% !important;}
+.SeatTemp50 .print-seat {height: 62px;}
+.SeatTemp50 .pnote {font-size: 15px !important;}
+.SeatTemp50.coach:nth-child(2) li:nth-child(13) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(17) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(21) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(12) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(11) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(10) .pcphone,
+.SeatTemp50.coach:nth-child(2) li:nth-child(14) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(18) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(22) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(25) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(28) .pcphone, 
+.SeatTemp50.coach:nth-child(2) li:nth-child(15) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(19) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(23) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(26) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(29) .pcphone, 
+.SeatTemp50.coach:nth-child(2) li:nth-child(16) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(20) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(24) .pcphone, .SeatTemp50.coach:nth-child(2) li:nth-child(27) .pcphone  {
+     width:100% !important;
+	 height: 15px !important;
+	}
+.SeatTemp50.coach:nth-child(2) li:nth-child(13) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(17) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(21) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(12) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(11) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(10) .pcname,
+.SeatTemp50.coach:nth-child(2) li:nth-child(14) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(18) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(22) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(25) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(28) .pcname, 
+.SeatTemp50.coach:nth-child(2) li:nth-child(15) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(19) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(23) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(26) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(29) .pcname, 
+.SeatTemp50.coach:nth-child(2) li:nth-child(16) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(20) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(24) .pcname, .SeatTemp50.coach:nth-child(2) li:nth-child(27) .pcname  {
+     width:100% !important;
+	 height: 15px !important;
+	}
+.SeatTemp50.coach:nth-child(2) li:nth-child(13), .SeatTemp50.coach:nth-child(2) li:nth-child(17), .SeatTemp50.coach:nth-child(2) li:nth-child(21), .SeatTemp50.coach:nth-child(2) li:nth-child(13), .SeatTemp50.coach:nth-child(2) li:nth-child(12), .SeatTemp50.coach:nth-child(2) li:nth-child(11),
+.SeatTemp50.coach:nth-child(2) li:nth-child(14), .SeatTemp50.coach:nth-child(2) li:nth-child(18), .SeatTemp50.coach:nth-child(2) li:nth-child(22), .SeatTemp50.coach:nth-child(2) li:nth-child(25), .SeatTemp50.coach:nth-child(2) li:nth-child(28), 
+.SeatTemp50.coach:nth-child(2) li:nth-child(15), .SeatTemp50.coach:nth-child(2) li:nth-child(19), .SeatTemp50.coach:nth-child(2) li:nth-child(23), .SeatTemp50.coach:nth-child(2) li:nth-child(26), .SeatTemp50.coach:nth-child(2) li:nth-child(29), 
+.SeatTemp50.coach:nth-child(2) li:nth-child(16), .SeatTemp50.coach:nth-child(2) li:nth-child(20), .SeatTemp50.coach:nth-child(2) li:nth-child(24), .SeatTemp50.coach:nth-child(2) li:nth-child(27)  {
+    height: 82px !important;
+	}

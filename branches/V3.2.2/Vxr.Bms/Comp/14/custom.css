@@ -1,0 +1,76 @@
+﻿.seat {
+    height: 125px;
+}
+.agentinfo {
+    height: 45px;
+    overflow: hidden;
+}
+.logonx {
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.cinfo p.name {
+        font-size: 12px !important;
+    }
+@media screen and (min-device-width: 1920px) {
+
+    .seat {
+        height: 140px;
+    }
+    .agentinfo {
+        height: 60px;
+    }
+    .agentinfo p {
+        font-size: 14px;
+    }
+    .cinfo {
+        padding: 5px;
+    }
+    .cinfo p.name {
+        font-size: 12px !important;
+    }
+    .numT {
+        font-size: 14px !important;
+    }
+    .cinfo p.phone {
+        font-size: 14px;
+    }
+}
+
+
+ 
+ /* su dung cho Bks khi them nut P*/
+ div.buttons {
+    width: 97%;
+    position: absolute;
+    bottom: 3px;
+}
+
+.seat {
+    height: 140px;
+}
+
+.agentinfo {
+    height: auto;
+}
+
+.cinfo {
+    width: 100%;
+    text-align: left;
+	padding: 5px;
+}
+
+.cinfo .phone {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pmInfo {
+    float: right;
+    padding-right: 10px;
+    margin-top: 16px;
+    font-size: 11px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,7 @@
+﻿.clearb {
+    clear: both;
+}
+
+.container-fluid .row label {
+    font-size: 12px !important;
+}

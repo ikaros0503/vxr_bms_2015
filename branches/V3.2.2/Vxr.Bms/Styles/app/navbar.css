@@ -1,0 +1,80 @@
+﻿.navbar {
+    margin-bottom: 0;
+    min-height: 40px !important;
+    border-radius:0 !important;
+}
+
+.navbar-brand {
+    padding: 12px 15px;
+    font-size: 17px;
+    line-height: 17px;
+    height: auto;
+}
+
+.navbar-form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+.navbar-default {
+    background: #1e62a3;
+}
+
+.navbar-inverse,  .navbar .open {
+    background: #216cb4 !important;
+    border:none;
+}
+
+
+.navbar .active a{
+    background:#006fa7 !important;
+    background-image:none !important;
+    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+}
+
+.navbar .open .dropdown-toggle{
+    background:#0098e5 !important;
+}
+
+    .navbar .navbar-nav > li > a, .navbar .navbar-brand, .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus, .navbar .navbar-brand:hover {
+        color: rgba(236,242,242,0.9);
+        
+    }
+
+.navbar-brand, .navbar-nav > li > a {
+    text-shadow: none;
+}
+
+.navbar ul.dropdown-menu{
+    background:rgba(224,242,255,0.9) !important;
+    border:none;
+}
+
+.navbar ul.dropdown-menu li a:hover{
+    background:#006eb7;
+    color:white;
+}
+
+.navbar-toggle{
+    background:rgba(0,116,193,0.8) !important;
+}
+
+.navbar-inverse .navbar-toggle, .navbar-toggle:hover, .navbar-toggle:focus{
+    background:rgba(0,116,193,0.8) !important;
+    border-radius:0;
+    border:none;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border-color:transparent;
+}
+
+.navbar a.active{
+    background:rgba(0,138,209,0.7) !important;
+}

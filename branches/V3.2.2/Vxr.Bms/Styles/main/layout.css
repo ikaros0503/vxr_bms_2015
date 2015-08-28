@@ -1,0 +1,67 @@
+﻿/*This file is extended app.css and for Laypout.Master, Home.aspx*/
+body {
+    background: #E2E5EB;
+}
+
+.ui-layout-pane {
+    background-color: transparent !important;
+}
+
+.filter {
+    /*width: 100%;*/
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0, rgba(211,211,211,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,1)), color-stop(100%, rgba(211,211,211,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0, rgba(211,211,211,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0, rgba(211,211,211,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0, rgba(211,211,211,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0, rgba(211,211,211,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3d3d3', GradientType=0 ); /* IE6-9 */
+    min-height: 38px;
+    /*margin-top:6px;*/
+    padding: 3px 0;
+}
+
+.dropdown-menu {
+    z-index: 1001 !important;
+}
+
+.header .dropdown-menu > li > a:hover, .header .dropdown-menu > li > a:focus {
+    background: none;
+}
+
+.dropdown-toggle:focus {
+    text-decoration: none;
+}
+
+#bs-example-navbar-collapse-1 {
+    border-color: red !important;
+}
+
+.footer {
+    margin-top: 18px;
+    background: #1e62a3;
+    height: 28px;
+    width: 100%;
+    position: relative;
+}
+
+    .footer p {
+        line-height: 26px;
+        color: #98BFE6;
+        font-size: 12px;
+        position: absolute;
+        left: 20px;
+        z-index: 10;
+        top: 2px;
+        margin-bottom: 0;
+    }
+
+.welcome {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: central;
+    margin-top: 10px;
+}

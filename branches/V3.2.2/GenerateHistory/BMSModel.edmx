@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="VXR_BMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Ticket">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Type" Type="int" />
+          <Property Name="Code" Type="nvarchar" MaxLength="32" />
+          <Property Name="Name" Type="nvarchar" MaxLength="512" />
+          <Property Name="Note" Type="nvarchar(max)" />
+          <Property Name="Serial" Type="nvarchar" MaxLength="512" />
+          <Property Name="TripDate" Type="datetime" />
+          <Property Name="TripTime" Type="nvarchar" MaxLength="32" />
+          <Property Name="TripAlias" Type="int" />
+          <Property Name="FromArea" Type="nvarchar" MaxLength="128" />
+          <Property Name="ToArea" Type="nvarchar" MaxLength="128" />
+          <Property Name="SeatCode" Type="nvarchar" MaxLength="32" />
+          <Property Name="PassCode" Type="nvarchar" MaxLength="32" />
+          <Property Name="RoundTripCode" Type="nvarchar" MaxLength="32" />
+          <Property Name="FromValid" Type="datetime" />
+          <Property Name="ToValid" Type="datetime" />
+          <Property Name="PickupDate" Type="datetime" />
+          <Property Name="PickupInfo" Type="nvarchar(max)" />
+          <Property Name="DropOffInfo" Type="nvarchar(max)" />
+          <Property Name="FacilityInfo" Type="nvarchar(max)" />
+          <Property Name="DeliveryInfo" Type="nvarchar(max)" />
+          <Property Name="CustomerInfo" Type="nvarchar" MaxLength="512" />
+          <Property Name="Fare" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Debt" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Refund" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Deposit" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Discount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Surcharge" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="CancelFee" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Commission" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="PaymentInfo" Type="nvarchar(max)" />
+          <Property Name="TransactionInfo" Type="nvarchar(max)" />
+          <Property Name="NotificationInfo" Type="nvarchar(max)" />
+          <Property Name="CallerInfo" Type="nvarchar(max)" />
+          <Property Name="AgentInfo" Type="nvarchar" MaxLength="512" />
+          <Property Name="UserCharge" Type="nvarchar" MaxLength="512" />
+          <Property Name="CreatedUser" Type="nvarchar" MaxLength="128" />
+          <Property Name="IssueDate" Type="datetime" />
+          <Property Name="IssueInfo" Type="nvarchar(max)" />
+          <Property Name="IssuedUser" Type="nvarchar" MaxLength="128" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Info" Type="nvarchar(max)" />
+          <Property Name="Keywords" Type="nvarchar(max)" />
+          <Property Name="IsPrgStatus" Type="int" />
+          <Property Name="IsPrgPartComp" Type="nvarchar(max)" />
+          <Property Name="IsPrgCreatedDate" Type="datetime" />
+          <Property Name="IsPrgUpdatedDate" Type="datetime" />
+          <Property Name="IsPrgCreatedUserId" Type="bigint" />
+          <Property Name="IsPrgUpdatedUserId" Type="bigint" />
+          <Property Name="IsPrgUnsignKeywords" Type="nvarchar(max)" />
+          <Property Name="IsPrgLanguageInfo" Type="nvarchar(max)" />
+          <Property Name="IsPrgHistoryInfo" Type="nvarchar(max)" />
+          <Property Name="TripId" Type="bigint" />
+          <Property Name="AgentId" Type="bigint" />
+          <Property Name="CustomerId" Type="bigint" />
+          <Property Name="EventId" Type="bigint" />
+          <Property Name="CompId" Type="bigint" />
+          <Property Name="ChargeDate" Type="datetime" />
+          <Property Name="StageCode" Type="int" />
+          <Property Name="CancelType" Type="int" />
+          <Property Name="CancelInfo" Type="nvarchar(max)" />
+          <Property Name="SeatType" Type="int" />
+          <Property Name="CanceledUser" Type="nvarchar" MaxLength="128" />
+          <Property Name="CanceledDate" Type="datetime" />
+          <Property Name="CanceledAgentId" Type="int" />
+          <Property Name="TimeCode" Type="int" />
+          <Property Name="ExpiredTime" Type="datetime" />
+          <Property Name="FromId" Type="int" />
+          <Property Name="ToId" Type="int" />
+          <Property Name="LastMovedDate" Type="datetime" />
+          <Property Name="VexerePaymentInfo" Type="nvarchar(max)" />
+          <Property Name="VexerePaymentType" Type="int" />
+          <Property Name="ReturnCode" Type="nvarchar" MaxLength="32" />
+          <Property Name="ReturnDate" Type="datetime" />
+          <Property Name="SNote" Type="nvarchar(max)" />
+          <Property Name="IsConfirmed" Type="bit" />
+          <Property Name="ResponsibilityUser" Type="nvarchar(max)" />
+          <Property Name="PickOrReturnDate" Type="nvarchar(max)" />
+          <Property Name="XMigrate" Type="int" />
+          <Property Name="XMigrateDate" Type="datetime" />
+          <Property Name="XMigrateKey" Type="int" />
+          <Property Name="IsPrgVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="DiscountType" Type="int" />
+          <Property Name="FinalPrice" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="BookingCode" Type="nvarchar" MaxLength="32" />
+          <Property Name="XMigrateType" Type="int" />
+          <Property Name="LastMovedTrip" Type="int" />
+          <Property Name="NumOfSend" Type="int" />
+        </EntityType>
+        <EntityType Name="TicketHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TicketId" Type="int" />
+          <Property Name="History" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="VXR_BMSModelStoreContainer">
+          <EntitySet Name="Ticket" EntityType="Self.Ticket" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TicketHistory" EntityType="Self.TicketHistory" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VXR_BMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Ticket">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="Int32" />
+          <Property Name="Code" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Serial" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="TripDate" Type="DateTime" Precision="3" />
+          <Property Name="TripTime" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="TripAlias" Type="Int32" />
+          <Property Name="FromArea" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ToArea" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="SeatCode" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="PassCode" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="RoundTripCode" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="FromValid" Type="DateTime" Precision="3" />
+          <Property Name="ToValid" Type="DateTime" Precision="3" />
+          <Property Name="PickupDate" Type="DateTime" Precision="3" />
+          <Property Name="PickupInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DropOffInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FacilityInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DeliveryInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerInfo" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="Fare" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Debt" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Refund" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Deposit" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Discount" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Surcharge" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="CancelFee" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="Commission" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="PaymentInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TransactionInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NotificationInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CallerInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AgentInfo" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="UserCharge" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedUser" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="IssueDate" Type="DateTime" Precision="3" />
+          <Property Name="IssueInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IssuedUser" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Keywords" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsPrgStatus" Type="Int32" />
+          <Property Name="IsPrgPartComp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsPrgCreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="IsPrgUpdatedDate" Type="DateTime" Precision="3" />
+          <Property Name="IsPrgCreatedUserId" Type="Int64" />
+          <Property Name="IsPrgUpdatedUserId" Type="Int64" />
+          <Property Name="IsPrgUnsignKeywords" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsPrgLanguageInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsPrgHistoryInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TripId" Type="Int64" />
+          <Property Name="AgentId" Type="Int64" />
+          <Property Name="CustomerId" Type="Int64" />
+          <Property Name="EventId" Type="Int64" />
+          <Property Name="CompId" Type="Int64" />
+          <Property Name="ChargeDate" Type="DateTime" Precision="3" />
+          <Property Name="StageCode" Type="Int32" />
+          <Property Name="CancelType" Type="Int32" />
+          <Property Name="CancelInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SeatType" Type="Int32" />
+          <Property Name="CanceledUser" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="CanceledDate" Type="DateTime" Precision="3" />
+          <Property Name="CanceledAgentId" Type="Int32" />
+          <Property Name="TimeCode" Type="Int32" />
+          <Property Name="ExpiredTime" Type="DateTime" Precision="3" />
+          <Property Name="FromId" Type="Int32" />
+          <Property Name="ToId" Type="Int32" />
+          <Property Name="LastMovedDate" Type="DateTime" Precision="3" />
+          <Property Name="VexerePaymentInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="VexerePaymentType" Type="Int32" />
+          <Property Name="ReturnCode" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="ReturnDate" Type="DateTime" Precision="3" />
+          <Property Name="SNote" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsConfirmed" Type="Boolean" />
+          <Property Name="ResponsibilityUser" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PickOrReturnDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="XMigrate" Type="Int32" />
+          <Property Name="XMigrateDate" Type="DateTime" Precision="3" />
+          <Property Name="XMigrateKey" Type="Int32" />
+          <Property Name="IsPrgVersion" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="DiscountType" Type="Int32" />
+          <Property Name="FinalPrice" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="BookingCode" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="XMigrateType" Type="Int32" />
+          <Property Name="LastMovedTrip" Type="Int32" />
+          <Property Name="NumOfSend" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="VXR_BMSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Ticket" EntityType="Self.Ticket" />
+          <EntitySet Name="TicketHistory" EntityType="VXR_BMSModel.TicketHistory" />
+        </EntityContainer>
+        <EntityType Name="TicketHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TicketId" Type="Int32" />
+          <Property Name="History" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VXR_BMSModelStoreContainer" CdmEntityContainer="VXR_BMSEntities">
+          <EntitySetMapping Name="Ticket">
+            <EntityTypeMapping TypeName="VXR_BMSModel.Ticket">
+              <MappingFragment StoreEntitySet="Ticket">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Serial" ColumnName="Serial" />
+                <ScalarProperty Name="TripDate" ColumnName="TripDate" />
+                <ScalarProperty Name="TripTime" ColumnName="TripTime" />
+                <ScalarProperty Name="TripAlias" ColumnName="TripAlias" />
+                <ScalarProperty Name="FromArea" ColumnName="FromArea" />
+                <ScalarProperty Name="ToArea" ColumnName="ToArea" />
+                <ScalarProperty Name="SeatCode" ColumnName="SeatCode" />
+                <ScalarProperty Name="PassCode" ColumnName="PassCode" />
+                <ScalarProperty Name="RoundTripCode" ColumnName="RoundTripCode" />
+                <ScalarProperty Name="FromValid" ColumnName="FromValid" />
+                <ScalarProperty Name="ToValid" ColumnName="ToValid" />
+                <ScalarProperty Name="PickupDate" ColumnName="PickupDate" />
+                <ScalarProperty Name="PickupInfo" ColumnName="PickupInfo" />
+                <ScalarProperty Name="DropOffInfo" ColumnName="DropOffInfo" />
+                <ScalarProperty Name="FacilityInfo" ColumnName="FacilityInfo" />
+                <ScalarProperty Name="DeliveryInfo" ColumnName="DeliveryInfo" />
+                <ScalarProperty Name="CustomerInfo" ColumnName="CustomerInfo" />
+                <ScalarProperty Name="Fare" ColumnName="Fare" />
+                <ScalarProperty Name="Debt" ColumnName="Debt" />
+                <ScalarProperty Name="Refund" ColumnName="Refund" />
+                <ScalarProperty Name="Deposit" ColumnName="Deposit" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="Surcharge" ColumnName="Surcharge" />
+                <ScalarProperty Name="CancelFee" ColumnName="CancelFee" />
+                <ScalarProperty Name="Commission" ColumnName="Commission" />
+                <ScalarProperty Name="PaymentInfo" ColumnName="PaymentInfo" />
+                <ScalarProperty Name="TransactionInfo" ColumnName="TransactionInfo" />
+                <ScalarProperty Name="NotificationInfo" ColumnName="NotificationInfo" />
+                <ScalarProperty Name="CallerInfo" ColumnName="CallerInfo" />
+                <ScalarProperty Name="AgentInfo" ColumnName="AgentInfo" />
+                <ScalarProperty Name="UserCharge" ColumnName="UserCharge" />
+                <ScalarProperty Name="CreatedUser" ColumnName="CreatedUser" />
+                <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+                <ScalarProperty Name="IssueInfo" ColumnName="IssueInfo" />
+                <ScalarProperty Name="IssuedUser" ColumnName="IssuedUser" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Info" ColumnName="Info" />
+                <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+                <ScalarProperty Name="IsPrgStatus" ColumnName="IsPrgStatus" />
+                <ScalarProperty Name="IsPrgPartComp" ColumnName="IsPrgPartComp" />
+                <ScalarProperty Name="IsPrgCreatedDate" ColumnName="IsPrgCreatedDate" />
+                <ScalarProperty Name="IsPrgUpdatedDate" ColumnName="IsPrgUpdatedDate" />
+                <ScalarProperty Name="IsPrgCreatedUserId" ColumnName="IsPrgCreatedUserId" />
+                <ScalarProperty Name="IsPrgUpdatedUserId" ColumnName="IsPrgUpdatedUserId" />
+                <ScalarProperty Name="IsPrgUnsignKeywords" ColumnName="IsPrgUnsignKeywords" />
+                <ScalarProperty Name="IsPrgLanguageInfo" ColumnName="IsPrgLanguageInfo" />
+                <ScalarProperty Name="IsPrgHistoryInfo" ColumnName="IsPrgHistoryInfo" />
+                <ScalarProperty Name="TripId" ColumnName="TripId" />
+                <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="EventId" ColumnName="EventId" />
+                <ScalarProperty Name="CompId" ColumnName="CompId" />
+                <ScalarProperty Name="ChargeDate" ColumnName="ChargeDate" />
+                <ScalarProperty Name="StageCode" ColumnName="StageCode" />
+                <ScalarProperty Name="CancelType" ColumnName="CancelType" />
+                <ScalarProperty Name="CancelInfo" ColumnName="CancelInfo" />
+                <ScalarProperty Name="SeatType" ColumnName="SeatType" />
+                <ScalarProperty Name="CanceledUser" ColumnName="CanceledUser" />
+                <ScalarProperty Name="CanceledDate" ColumnName="CanceledDate" />
+                <ScalarProperty Name="CanceledAgentId" ColumnName="CanceledAgentId" />
+                <ScalarProperty Name="TimeCode" ColumnName="TimeCode" />
+                <ScalarProperty Name="ExpiredTime" ColumnName="ExpiredTime" />
+                <ScalarProperty Name="FromId" ColumnName="FromId" />
+                <ScalarProperty Name="ToId" ColumnName="ToId" />
+                <ScalarProperty Name="LastMovedDate" ColumnName="LastMovedDate" />
+                <ScalarProperty Name="VexerePaymentInfo" ColumnName="VexerePaymentInfo" />
+                <ScalarProperty Name="VexerePaymentType" ColumnName="VexerePaymentType" />
+                <ScalarProperty Name="ReturnCode" ColumnName="ReturnCode" />
+                <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+                <ScalarProperty Name="SNote" ColumnName="SNote" />
+                <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+                <ScalarProperty Name="ResponsibilityUser" ColumnName="ResponsibilityUser" />
+                <ScalarProperty Name="PickOrReturnDate" ColumnName="PickOrReturnDate" />
+                <ScalarProperty Name="XMigrate" ColumnName="XMigrate" />
+                <ScalarProperty Name="XMigrateDate" ColumnName="XMigrateDate" />
+                <ScalarProperty Name="XMigrateKey" ColumnName="XMigrateKey" />
+                <ScalarProperty Name="IsPrgVersion" ColumnName="IsPrgVersion" />
+                <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
+                <ScalarProperty Name="FinalPrice" ColumnName="FinalPrice" />
+                <ScalarProperty Name="BookingCode" ColumnName="BookingCode" />
+                <ScalarProperty Name="XMigrateType" ColumnName="XMigrateType" />
+                <ScalarProperty Name="LastMovedTrip" ColumnName="LastMovedTrip" />
+                <ScalarProperty Name="NumOfSend" ColumnName="NumOfSend" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TicketHistory">
+            <EntityTypeMapping TypeName="VXR_BMSModel.TicketHistory">
+              <MappingFragment StoreEntitySet="TicketHistory">
+                <ScalarProperty Name="History" ColumnName="History" />
+                <ScalarProperty Name="TicketId" ColumnName="TicketId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

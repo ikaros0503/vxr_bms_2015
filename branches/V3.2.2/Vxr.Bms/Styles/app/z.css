@@ -1,0 +1,217 @@
+﻿/*This file is for Login.Master and Laypout.Master*/
+
+body {
+    background: #E2E5EB;
+}
+
+.logo-foot img {
+    margin-top: -10px;
+}
+
+.footer {
+    margin-top: 18px;
+    background: #1e62a3;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+    .footer .info {
+        margin-top: -15px;
+        width: 100%;
+    }
+
+    .footer .hotline {
+        text-align: right;
+        color: lightgray;
+        display: inline-block;
+        float: right;
+        margin-top: -5px !important;
+    }
+
+    .footer .copyright {
+        text-align: left;
+        color: lightgray;
+        display: inline-block;
+        float: left;
+        margin-top: -5px !important;
+        margin-left: 10px;
+    }
+
+.bd-radius0 {
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.realperson-challenge {
+    display: inline-table;
+    margin-bottom: 5px;
+}
+
+.txtcapcha {
+    width: 70%;
+    margin-bottom: 10px;
+    float: right;
+}
+
+div.capcha {
+    background-color: #e2e5eb !important;
+}
+
+    div.capcha img {
+        height: 30px;
+        width: 48%;
+        float: right;
+    }
+
+#progressCover {
+    width: 100%;
+    height: 2000px;
+    background: #FFF;
+    position: absolute;
+    z-index: 100000;
+    margin-top: 44px;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 29px;
+}
+
+#progressFoot {
+    position: fixed;
+    bottom: 0;
+    background: url(../../Content/images/bus.gif);
+    width: 100%;
+    height: 73px;
+    z-index: 1000000;
+    opacity: 0.6;
+}
+
+div.nonSupport {
+    display: none;
+}
+
+    div.nonSupport img {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+
+@media only screen and (max-width :260px) {
+    div.nonSupport {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    div.login-container, #mainContainer, div.footer, .navbar, .status-bar, .BSFilterForm {
+        display: none !important;
+    }
+}
+
+#HomeTopSearch {
+    width: 100%;
+    padding-left: 25px;
+    display: none;
+}
+
+    #HomeTopSearch .searchContainer {
+        width: 100% !important;
+    }
+
+    #HomeTopSearch input {
+        width: 100%;
+    }
+
+.HomeTopSearch div.searchContainer div.search-result table.search-items tr {
+    padding: 0 !important;
+}
+
+    .HomeTopSearch div.searchContainer div.search-result table.search-items tr td:hover {
+        cursor: pointer;
+    }
+
+.navbar {
+    margin-bottom: 0;
+    min-height: 40px !important;
+    border-radius:0 !important;
+}
+
+.navbar-brand {
+    padding: 12px 15px;
+    font-size: 17px;
+    line-height: 17px;
+    height: auto;
+}
+
+.navbar-form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+.navbar-default {
+    background: #1e62a3;
+}
+
+.navbar-inverse,  .navbar .open {
+    background: #216cb4 !important;
+    border:none;
+}
+
+
+.navbar .active a{
+    background:#006fa7 !important;
+    background-image:none !important;
+    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+}
+
+.navbar .open .dropdown-toggle{
+    background:#0098e5 !important;
+}
+
+    .navbar .navbar-nav > li > a, .navbar .navbar-brand, .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus, .navbar .navbar-brand:hover {
+        color: rgba(236,242,242,0.9);
+        
+    }
+
+.navbar-brand, .navbar-nav > li > a {
+    text-shadow: none;
+}
+
+.navbar ul.dropdown-menu{
+    background:rgba(224,242,255,0.9) !important;
+    border:none;
+}
+
+.navbar ul.dropdown-menu li a:hover{
+    background:#006eb7;
+    color:white;
+}
+
+.navbar-toggle{
+    background:rgba(0,116,193,0.8) !important;
+}
+
+.navbar-inverse .navbar-toggle, .navbar-toggle:hover, .navbar-toggle:focus{
+    background:rgba(0,116,193,0.8) !important;
+    border-radius:0;
+    border:none;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border-color:transparent;
+}
+
+.navbar a.active{
+    background:rgba(0,138,209,0.7) !important;
+}

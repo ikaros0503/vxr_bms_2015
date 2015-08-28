@@ -1,0 +1,366 @@
+﻿<script id="wChangePass" type="text/x-handlebars-template">
+    <div class="modal fade" style="display: none">
+        <div class="modal-sm modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header3">
+                    <button type="button" class="close btn-close-new2" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h3 class="modal-title2">Đổi mật khẩu</h3>
+                </div>
+                <div class="modal-body2">
+                    <div class="container-fluid panel-body">
+                        <h6 class="talign-center">Mật khẩu mới tối thiểu 6 kí tự gồm chữ cái và số</h6>
+                        <div class="row mt5 h60">
+
+                            <div class="change-pass-container">
+                                <div class="form-group mb8 has-feedback ml0">
+                                    <label class="control-label">Mật khẩu cũ</label>
+                                    <input type="password" class="form-control old-password">
+                                    <span class="glyphicon glyphicon-ok form-control-feedback silver"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt2 h60">
+                            <div class="change-pass-container">
+                                <div class="form-group mb8 has-feedback ml0">
+                                    <label class="control-label">Mật khẩu mới</label>
+                                    <input type="password" class="form-control new-password">
+                                    <span class="glyphicon glyphicon-ok form-control-feedback silver"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt2 h60">
+                            <div class="change-pass-container">
+                                <div class="form-group mb8 has-feedback ml0">
+                                    <label class="control-label">Nhập lại mật khẩu mới</label>
+                                    <input type="password" class="form-control new-password-retype">
+                                    <span class="glyphicon glyphicon-ok form-control-feedback silver"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="change-pass-container">
+                                <button type="button" disabled="disabled" class="btn btn-primary btn-sm submit-change-password">Đổi mật khẩu</button>
+                                <button type="button" data-dismiss="modal" class="btn btn-sm ml20 cancel-change-password">Hủy</button>
+                            </div>
+                        </div>
+                        <div id="ChangePasswordContainer" class="mt10 pb5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</script>
+
+<script id="fTrip" type="text/x-handlebars-template">
+    <div class="col-md-4 col-sm-4 col-xs-6 pl0">
+        <div class="form-group">
+            <select class="form-control input-sm" name="{{_name}}">
+                {{#each _lTrips}}
+                <option value="{{TripId}}">{{TripName}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+</script>
+
+<script id="updateForm" type="text/x-handlebars-template">
+    <div class="modal fade" id="update-popup" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header bg-primary" style="padding-top: 10px; padding-bottom: 10px;">
+                    <h3 class="modal-title thin-1" style="font-size: 18px;">Cập nhật thông tin</h3>
+                </div>
+                <div class="modal-body" style="padding-top: 0;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-1 col-sm-1 col-xs-1 responsive-xs-l" style="padding-right: 0;">
+                                <ul class="list-group" id="seat-no">
+                                    <li class="list-group-item vyellow">5</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-11 pl0-xs mt10-xs responsive-xs-r">
+                                <ul class="nav nav-tabs" role="tab-list">
+                                    <li class="active">
+                                        <a href="#general" role="tab" data-toggle="tab" data-tab="general">Thông tin chung</a>
+                                    </li>
+                                    <li class="hidden">
+                                        <a href="#valid" role="tab" data-toggle="tab" data-tab="valid">Vé mở</a>
+                                    </li>
+                                    <li><a href="#history" role="tab" data-toggle="tab" data-tab="history">Lịch sử</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active in" id="general">
+                                        <form id="UpdateForm" role="form" class="form-horizontal">
+                                            <input type="hidden" name="IdInfo" value="">
+                                            <input type="hidden" name="CustomerInfo" value="">
+                                            <input type="hidden" name="StatusInfo" value="">
+                                            <input type="hidden" name="CustomerId" value="">
+                                            <input type="hidden" name="NumSeat" value="">
+                                            <input type="hidden" name="pIndex" value="">
+                                            <input type="hidden" name="CreatedUser" value="">
+                                            <div class="container-fluid">
+                                                <div class="alert alert-danger message-error" role="alert" style="margin: 5px 0 0; display: none;"></div>
+                                                <div class="row" style="margin-top: 0;">
+                                                    <div class="col-md-12 checkbox-route-point">
+                                                        <!--<label class="checkbox-inline hidden">
+                                                            <input type="checkbox" name="RoutePoint" data-point-id="815" checked="checked"><b>BXCM</b><mark class="text-primary">19:30</mark>
+                                                        </label>
+                                                        <label class="checkbox-inline hidden">
+                                                            <input type="checkbox" name="RoutePoint" data-point-id="771" checked="checked"><b>BXPNNT</b><mark class="text-primary">13:30</mark>
+                                                        </label>-->
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Ngày đi</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="PickupDate" value="" readonly="readonly" class="form-control"><div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Giờ</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="PickupTime" value="" readonly="readonly" class="form-control">
+                                                            <div class="input-group-addon"><i class="glyphicon glyphicon-time"></i></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Di động</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="PhoneNumbers" value="" class="form-control vblue fw700">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Tên</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="FullName" value="" class="form-control vblue fw700">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Đón khách</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="PickupInfo" value="" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">T/C</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="TransferInfo" value="" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Giá</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="Fare" value="" class="form-control vblue fw700">
+                                                            <div class="input-group-addon">đ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Tổng tiền</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="ToTalFare" value="" readonly="readonly" class="form-control vblue fw700">
+                                                            <div class="input-group-addon">đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Thanh toán</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <select name="PaymentType" class="form-control">
+                                                                <option value="">Chọn hình thức</option>
+                                                                <option value="1">Tại văn phòng</option>
+                                                                <option value="4">Tài xế thu</option>
+                                                                <option value="6">Đại lý</option>
+                                                                <option value="9">Không thu tiền</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0" style="display: none;">Chọn VP</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12" style="display: none;">
+                                                            <select name="BranchName" data-type="1" class="form-control mpayment">
+                                                                <!--<option value="">Chọn VP/CN</option>
+                                                                <option value="809">B.X Phía Nam Nha Trang</option>
+                                                                <option value="815">Phòng vé Cà Mau</option>
+                                                                <option value="814">Phòng vé Châu Đốc</option>
+                                                                <option value="818">Phòng vé Gia Lai</option>
+                                                                <option value="813">Phòng vé Kiên Giang</option>
+                                                                <option value="817">Phòng vé Miền Đông</option>
+                                                                <option value="816">Phòng vé Vạn Giã</option>
+                                                                <option value="812">Văn Phòng Liên Hưng</option>-->
+                                                            </select>
+                                                        </div>
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0" style="display: none;">TK nhận</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12" style="display: none;">
+                                                            <input type="text" name="ChargeCode" value="" data-type="2" placeholder="Số TK|Tên|Mã GD" class="form-control mpayment">
+                                                        </div>
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0" style="display: none;">Địa chỉ thu</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12" style="display: none;">
+                                                            <input type="text" name="PayAddress" value="" data-type="3" class="form-control mpayment">
+                                                        </div>
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0" style="display: none;">Tên tài xế</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12" style="display: none;">
+                                                            <input type="text" name="DriverName" value="" data-type="4" class="form-control mpayment">
+                                                        </div>
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0" style="display: none;">Mã giao dịch</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12" style="display: none;">
+                                                            <input type="text" name="TransCode" value="" data-type="5" class="form-control mpayment">
+                                                        </div>
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0" style="display: none;">Chọn đại lý</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12" style="display: none;">
+                                                            <select name="AgentName" data-type="6" class="form-control mpayment" style="display: none;">
+                                                                <option value="">Chọn đại lý(agent)</option>
+                                                            </select>
+                                                            <div class="chosen-container chosen-container-single" style="width: 100%;" title="">
+                                                                <a class="chosen-single" tabindex="-1"><span>Chọn đại lý(agent)</span><div><b></b></div></a>
+                                                                <div class="chosen-drop">
+                                                                    <div class="chosen-search">
+                                                                        <input type="text" autocomplete="off">
+                                                                    </div><ul class="chosen-results"></ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Ghi chú</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <textarea name="Note" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Mã vé</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="" name="Code" value="" readonly="readonly" class="form-control vblue fw700">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row action-row">
+                                                    <div class="col-md-12 col-xs-12 list-btn col-sm-12">
+                                                        <button type="button" class="btn btn-danger btn-cancel pull-left">
+                                                            <span class="glyphicon glyphicon-remove"></span>&nbsp;Hủy vé
+                                                        </button>
+                                                        <button type="button" class="btn btn-success pull-left btn-add-more-ticket">Thêm vé</button>
+                                                        <button type="button" class="btn btn-primary pull-left btn-return">Khứ hồi</button>
+                                                        <button type="button" class="btn btn-primary btn-update">Cập nhật</button>
+                                                        <button type="button" class="btn btn-warning btn-eprint">In vé</button>
+                                                        <button type="button" class="btn btn-default btn-close">Đóng</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="valid">
+                                        <form id="ValidForm" role="form" class="form-horizontal">
+                                            <input type="hidden" name="IdInfo" value="">
+                                            <div class="container-fluid">
+                                                <div class="alert alert-danger message-error" role="alert" style="margin:5px 0 0 0;display:none;"></div>
+                                                <div class="row" style="margin-top: 0;">
+                                                    <div class="col-md-12 checkbox-route-point"></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-4 col-xs-6">
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12 col-md-offset-4 col-sm-offset-4"><label><input type="radio" name="Status" value="7">&nbsp; Open</label></div>
+                                                    </div><div></div><div></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-4 col-xs-6">
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12 col-md-offset-4 col-sm-offset-4"><label><input type="radio" name="Status" value="6">&nbsp; Valid</label></div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-6">
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12"><input type="text" name="FromValid" value="" placeholder="Từ ngày" class="form-control datepicker hasDatepicker" id="dp1431964013835"><div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></div></div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-6">
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="ToValid" value="" placeholder="Đến ngày" class="form-control datepicker hasDatepicker" id="dp1431964013836"><div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-4 col-xs-6">
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12 col-md-offset-4 col-sm-offset-4"><label><input type="radio" name="Status" value="3">&nbsp; Hủy vé</label></div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Phí</label><div class="input-group col-md-8 col-sm-8 col-xs-12"><input type="text" name="CancelFee" value="" placeholder="0" class="form-control"><div class="input-group-addon">đ</div></div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Tổng</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="ToTalCancelFee" value="" placeholder="0" readonly="readonly" class="form-control">
+                                                            <div class="input-group-addon">đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-xs-12"><p>Nếu hành khách có vé mở. Vui lòng nhập mã vé vào ô bên dưới</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-xs-6">
+                                                        <label class="col-sm-4 control-label col-md-4 col-xs-12 pl0">Mã vé mở</label>
+                                                        <div class="input-group col-md-8 col-sm-8 col-xs-12">
+                                                            <input type="text" name="PassCode" value="" class="form-control">
+                                                        </div>
+                                                    </div><div></div>
+                                                </div>
+                                                <div class="row action-row">
+                                                    <div class="col-md-12 col-xs-12 list-btn">
+                                                        <button type="button" class="btn btn-danger btn-confirm">
+                                                            <span class="glyphicon glyphicon-ok"></span>&nbsp;Xác nhận
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-close">Đóng</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="history">
+                                        <div class="container-fluid">
+                                            <div class="row history-row">
+                                                <div class="col-sm-12">
+                                                    <table class="table table-striped table-hover table-condensed">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>NV</th>
+                                                                <th>Tác vụ</th>
+                                                                <th>Ngày</th>
+                                                                <th>Cập nhật</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>admin.lienhung</td>
+                                                                <td>Đặt vé</td>
+                                                                <td>18-05-2015 <b>16:14</b></td>
+                                                                <td>VP/CN:&nbsp;B.X Phía Nam Nha Trang<br>Chuyến:&nbsp;18-05-2015 <b>19:30</b><br>Mã ghế:&nbsp;5<br>Ngày đặt:&nbsp;18-05-2015 <b>16:13</b><br>Giờ đón:&nbsp;18-05-2015 <b>19:30</b><br>Trạng thái:&nbsp;Đặt chỗ<br>Giá:&nbsp;330.000 đ<br>Người đặt:&nbsp;admin.lienhung<br>Nơi đi:&nbsp;Bến xe Cà Mau<br>Nơi đến:&nbsp;Bến Xe Phía Nam Nha Trang<br></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="row action-row">
+                                                <div class="col-md-12 list-btn">
+                                                    <button type="button" class="btn btn-default btn-close">Đóng</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+

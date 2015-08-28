@@ -1,0 +1,243 @@
+﻿ul.coach {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/* 
+	ul.coach:nth-child(1) {
+        margin-right: 8px !important;
+    } */
+    ul.coach:nth-child(2) {
+        margin-top: 8px;
+    }
+ul.coach li {
+        white-space: nowrap;
+    }
+
+
+.da-thanh-toan {
+    background: black !important;
+    color: white;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .vcol-md-5 {
+    float: left;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-4 {
+    width: 33.3333%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.vcol-md-5 {
+    width: 20%;
+}
+
+.print-seat {
+    height: 74px;
+}
+
+    .print-seat table {
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        padding: 0;
+    }
+
+        .print-seat table td {
+            padding-top: 0;
+            padding-bottom: 0;
+            vertical-align: top;
+        }
+
+.br {
+    border-right: 1px solid #000000;
+}
+
+.bb {
+    border-bottom: 1px solid #000000;
+}
+
+.print-seat p {
+    margin: 0;
+}
+
+.pseat-code {
+    width: 25%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    float: left;
+}
+
+
+.pseat-no {
+    font-weight: 400;
+    font-size: 12px !important;
+}
+
+.pcphone {
+    font-weight: 700;
+    font-size: 20px !important;
+    float: right;
+    width: 50%;
+    text-align: right;
+	margin-top: 4px !important;
+}
+
+.ppayment {
+    width: 75%;
+    float: right;
+    text-align: right;
+    /*background: #ddd;*/
+}
+
+.pnote {
+    height: 20px;
+    /*overflow: hidden;*/
+    /* clear: both; */
+    /* text-transform: lowercase; */
+    margin: -15px 0;
+    line-height: 16px;
+    width: 100%;
+	font-size: 19px;
+}
+
+.ppickup span {
+    text-transform: lowercase;
+}
+
+.pmInfo {
+    text-align: right;
+}
+
+.print-title {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+strong.title {
+    text-transform: uppercase;
+}
+
+.pcname {
+    float: left;
+    width: 50%;
+    font-size: 18px !important;
+	margin-top: 4px !important;
+}
+
+.ntk-pertrip {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.list {
+    clear: both;
+}
+
+    .list h3 {
+        text-align: center;
+    }
+
+    .list table, .list th, .list td {
+        border: 1px solid black;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .list table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .list p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+
+		ul.coach:nth-child(1) li:nth-child(17), ul.coach:nth-child(1) li:nth-child(18),
+		ul.coach:nth-child(1) li:nth-child(19), ul.coach:nth-child(1) li:nth-child(16),
+		ul.coach:nth-child(2) li:nth-child(17), ul.coach:nth-child(2) li:nth-child(18),
+		ul.coach:nth-child(2) li:nth-child(19), ul.coach:nth-child(2) li:nth-child(16) {
+		height: 100px !important;
+		}
+		ul.coach:nth-child(1) li:nth-child(17) table .pcphone, ul.coach:nth-child(1) li:nth-child(18) table .pcphone,
+		ul.coach:nth-child(1) li:nth-child(19) table .pcphone, ul.coach:nth-child(1) li:nth-child(16) table .pcphone,
+		ul.coach:nth-child(2) li:nth-child(17) table .pcphone, ul.coach:nth-child(2) li:nth-child(18) table .pcphone,
+		ul.coach:nth-child(2) li:nth-child(19) table .pcphone, ul.coach:nth-child(2) li:nth-child(16) table .pcphone {
+		width: 100%;
+		
+		}
+		/*
+		ul.coach:nth-child(1) li:nth-child(17) table .ppayment, ul.coach:nth-child(1) li:nth-child(18) table .ppayment,
+		ul.coach:nth-child(1) li:nth-child(19) table .ppayment, ul.coach:nth-child(1) li:nth-child(20) table .ppayment,
+		ul.coach:nth-child(1) li:nth-child(21) table .ppayment,
+		ul.coach:nth-child(2) li:nth-child(16) table .ppayment,
+		ul.coach:nth-child(2) li:nth-child(17) table .ppayment, ul.coach:nth-child(2) li:nth-child(18) table .ppayment,
+		ul.coach:nth-child(2) li:nth-child(19) table .ppayment, ul.coach:nth-child(2) li:nth-child(20) table .ppayment {
+		width: 100% !important;
+		text-align: left !important;
+		}
+		ul.coach:nth-child(1) li:nth-child(17) table .pcname, ul.coach:nth-child(1) li:nth-child(18) table .pcname,
+		ul.coach:nth-child(1) li:nth-child(19) table .pcname, ul.coach:nth-child(1) li:nth-child(20) table .pcname,
+		ul.coach:nth-child(1) li:nth-child(21) table .pcname,
+		ul.coach:nth-child(2) li:nth-child(16) table .pcname,
+		ul.coach:nth-child(2) li:nth-child(17) table .pcname, ul.coach:nth-child(2) li:nth-child(18) table .pcname,
+		ul.coach:nth-child(2) li:nth-child(19) table .pcname, ul.coach:nth-child(2) li:nth-child(20) table .pcname {
+		margin-top: 2px !important;
+		}
+		
+		ul.coach:nth-child(1) li:nth-child(17) table .pnote, ul.coach:nth-child(1) li:nth-child(18) table .pnote,
+		ul.coach:nth-child(1) li:nth-child(19) table .pnote, ul.coach:nth-child(1) li:nth-child(20) table .pnote,
+		ul.coach:nth-child(1) li:nth-child(21) table .pnote,
+		ul.coach:nth-child(2) li:nth-child(16) table .pnote,
+		ul.coach:nth-child(2) li:nth-child(17) table .pnote, ul.coach:nth-child(2) li:nth-child(18) table .pnote,
+		ul.coach:nth-child(2) li:nth-child(19) table .pnote, ul.coach:nth-child(2) li:nth-child(20) table .pnote {
+		margin-top: -14px !important;
+		
+		}
+		
+		ul.coach:nth-child(1) li:nth-child(17) table .pcphone, ul.coach:nth-child(1) li:nth-child(18) table .pcphone,
+		ul.coach:nth-child(1) li:nth-child(19) table .pcphone, ul.coach:nth-child(1) li:nth-child(20) table .pcphone,
+		ul.coach:nth-child(1) li:nth-child(21) table .pcphone,
+		ul.coach:nth-child(2) li:nth-child(16) table .pcphone,
+		ul.coach:nth-child(2) li:nth-child(17) table .pcphone, ul.coach:nth-child(2) li:nth-child(18) table .pcphone,
+		ul.coach:nth-child(2) li:nth-child(19) table .pcphone, ul.coach:nth-child(2) li:nth-child(20) table .pcphone {
+		margin-top: 2px !important;
+		font-size: 16px !important;
+		}
+
+		ul.coach:nth-child(1) li:nth-child(13) table .pcphone, ul.coach:nth-child(1) li:nth-child(14) table .pcphone,
+		ul.coach:nth-child(1) li:nth-child(15) table .pcphone, ul.coach:nth-child(1) li:nth-child(16) table .pcphone{
+		font-size: 16px !important;
+		margin-top: 1px !important;
+		}
+		ul.coach:nth-child(1) li:nth-child(13) table .pcname, ul.coach:nth-child(1) li:nth-child(14) table .pcname,
+		ul.coach:nth-child(1) li:nth-child(15) table .pcname, ul.coach:nth-child(1) li:nth-child(16) table .pcname{
+		font-size: 16px !important;
+		margin-top: -2px !important;
+		}
+		ul.coach:nth-child(1) li:nth-child(13) table .pnote, ul.coach:nth-child(1) li:nth-child(14) table .pnote,
+		ul.coach:nth-child(1) li:nth-child(15) table .pnote, ul.coach:nth-child(1) li:nth-child(16) table .pnote{
+		font-size: 16px !important;
+		margin-top: -10px !important;
+		}
+		
+
+ */

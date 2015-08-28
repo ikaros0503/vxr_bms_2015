@@ -1,0 +1,165 @@
+﻿ul.coach {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .vcol-md-5 {
+    float: left;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-4 {
+    width: 33.3333%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.vcol-md-5 {
+    width: 20%;
+}
+
+.print-seat {
+    height: 105px;
+}
+
+    .print-seat table {
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        padding: 3px;
+    }
+
+        .print-seat table td {
+            padding-top: 0;
+            padding-bottom: 0;
+            vertical-align: top;
+        }
+
+.br {
+    border-right: 1px solid #000000;
+}
+
+.bb {
+    border-bottom: 1px solid #000000;
+}
+
+.print-seat p {
+    margin: 0;
+}
+
+.pseat-code {
+    width: 45%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    float: left;
+}
+
+.pseat-no {
+    font-weight: 400;
+    font-size: 12px !important;
+}
+
+.pcphone {
+    font-weight: 700;
+    font-size: 12px !important;
+}
+
+.ppayment {
+    width: 55%;
+    float: right;
+    text-align: right;
+}
+
+.pnote {
+    height: 20px;
+    /*overflow: hidden;*/
+    clear: both;
+    text-transform: lowercase;
+}
+
+.ppickup span {
+    text-transform: lowercase;
+}
+
+.pmInfo {
+    text-align: right;
+}
+
+.print-title {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+strong.title {
+    text-transform: uppercase;
+}
+
+.pcname {
+    float: left;
+    width: 50%;
+}
+
+.pcphone {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.ntk-pertrip {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.list {
+    clear: both;
+}
+
+    .list h3 {
+        text-align: center;
+    }
+
+    .list table, .list th, .list td {
+        border: 1px solid black;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .list table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .list p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+.ppayment {
+    background: #ddd;
+}
+
+ul.coach:nth-child(1) li:nth-child(16), ul.coach:nth-child(1) li:nth-child(21) {
+    clear: both;
+}
+
+ul.coach:nth-child(1) li:nth-child(4) table, ul.coach:nth-child(1) li:nth-child(10) table {
+    border-bottom: 1px solid #000;
+}
+
+ul.coach:nth-child(1) li:nth-child(22) table, ul.coach:nth-child(1) li:nth-child(27) table,
+ul.coach:nth-child(1) li:nth-child(32) table,ul.coach:nth-child(1) li:nth-child(37) table {
+    border-right: 1px solid #000;
+}

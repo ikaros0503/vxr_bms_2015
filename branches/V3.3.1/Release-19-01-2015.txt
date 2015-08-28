@@ -1,0 +1,2 @@
+Add view gc_TripSummary00
+Add view gc_TripSummary01

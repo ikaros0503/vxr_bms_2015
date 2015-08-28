@@ -1,0 +1,127 @@
+﻿* {
+    text-shadow: none !important;
+    color: #000 !important; /*Black prints faster: h5bp.com/s*/
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+body td {
+    font-size: 12px !important;
+}
+
+a,
+a:visited {
+    text-decoration: underline;
+}
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+abbr[title]:after {
+    content: " (" attr(title) ")";
+}
+
+/*Don't show links for images, or javascript/internal links*/
+.ir a:after,
+a[href^="javascript:"]:after,
+a[href^="#"]:after {
+    content: "";
+}
+
+pre,
+blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
+
+thead {
+    display: table-header-group; /*h5bp.com/t*/
+}
+
+tr,
+img {
+    page-break-inside: avoid;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+@page {
+    margin: 0.5cm;
+}
+
+p,
+h2,
+h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+h2,
+h3 {
+    page-break-after: avoid;
+}
+
+.mt0 {
+    margin-top: 0 !important;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.p0 {
+    padding: 0 !important;
+}
+
+.table {
+    margin-bottom: 10px;
+}
+
+.no-border td {
+    border: 0 !important;
+}
+
+.no-border {
+    border: 0 !important;
+}
+
+.fone-hh h4 {
+    font-size: 13px;
+    margin: 0 0;
+}
+
+.fone-hh p {
+    margin: 0 0;
+}
+
+.bl0 {
+    border-left: 0 !important;
+}
+
+.br0 {
+    border-right: 0 !important;
+}
+
+.bt0 {
+    border-top: 0 !important;
+}
+
+.bb0 {
+    border-bottom: 0 !important;
+}
+
+body table.table-phieu-hang tbody tr td {
+    border-color: #777 !important;
+}
+
+body table.table-phoi-hang thead tr th {
+    font-size: 12px !important;
+    white-space: nowrap;
+}

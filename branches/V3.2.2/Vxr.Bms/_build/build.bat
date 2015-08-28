@@ -1,0 +1,1 @@
+node ..\Base\loadder-requirejs-optimizer-2.1.18\\r.js -o build.json

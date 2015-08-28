@@ -1,0 +1,196 @@
+﻿ul.coach {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .vcol-md-5 {
+    float: left;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-4 {
+    width: 33.3333%;
+}
+.no-background {
+    background: none !important;}
+.da-thanh-toan {background:black !important;color:white;}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.vcol-md-5 {
+    width: 20%;
+}
+
+.SeatTemp16 .print-seat {
+    height: 105px;
+}
+.SeatTemp28 .print-seat {
+    height: 95px;
+}
+.SeatTemp40 .print-seat {
+    height: 99px;
+}
+
+    .print-seat table {
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        padding: 3px;
+    }
+
+        .print-seat table td {
+            padding-top: 0;
+            padding-bottom: 0;
+            vertical-align: top;
+        }
+
+.br {
+    border-right: 1px solid #000000;
+}
+
+.bb {
+    border-bottom: 1px solid #000000;
+}
+
+.print-seat p {
+    margin: 0;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.pseat-code {
+    width: 45%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px !important;
+    float: left;
+}
+
+.pseat-no {
+    font-weight: 400;
+    font-size: 12px !important;
+}
+.pcname {
+	text-transform: uppercase;
+}
+.pcphone {
+    font-weight: 700;
+	font-size: 14px !important;
+}
+
+.ppayment {
+    width: 55%;
+    float: right;
+    text-align: right;
+}
+
+.pnote {
+    height: 20px;
+    /*overflow: hidden;*/
+    clear: both;
+    text-transform: lowercase;
+}
+
+.ppickup span {
+    text-transform: lowercase;
+}
+
+.pmInfo {
+    text-align: right;
+}
+
+.print-title {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+strong.title {
+    text-transform: uppercase;
+}
+
+.ntk-pertrip {
+    text-transform: uppercase;
+}
+
+.list {
+    clear: both;
+}
+
+    .list h3 {
+        text-align: center;
+    }
+
+    .list table, .list th, .list td {
+        border: 1px solid black;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .list table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .list p {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+.ppayment {
+    /*background: #ddd;*/
+}
+.ppayment.paid {
+	background: #b7b7b7;
+}
+ul.SeatTemp40.coach:nth-child(1){
+	margin-right: 5px;
+	width: 49.5% !important;
+}
+ul.SeatTemp40.coach:nth-child(1) li:nth-child(16) table, ul.SeatTemp40.coach:nth-child(2) li:nth-child(16) table,
+ul.SeatTemp40.coach:nth-child(1) li:nth-child(17) table, ul.SeatTemp40.coach:nth-child(2) li:nth-child(17) table,
+ul.SeatTemp40.coach:nth-child(1) li:nth-child(18) table, ul.SeatTemp40.coach:nth-child(2) li:nth-child(18) table,
+ul.SeatTemp40.coach:nth-child(1) li:nth-child(19) table, ul.SeatTemp40.coach:nth-child(2) li:nth-child(19) table,
+ul.SeatTemp40.coach:nth-child(1) li:nth-child(20) table, ul.SeatTemp40.coach:nth-child(2) li:nth-child(20) table {
+    height: 140px;
+}
+ul.SeatTemp40.coach:nth-child(1) li:nth-child(16) table .ppayment, ul.SeatTemp40.coach:nth-child(2) li:nth-child(16) table .ppayment,
+ul.SeatTemp40.coach:nth-child(1) li:nth-child(17) table .ppayment, ul.SeatTemp40.coach:nth-child(2) li:nth-child(17) table .ppayment,
+ul.SeatTemp40.coach:nth-child(1) li:nth-child(18) table .ppayment, ul.SeatTemp40.coach:nth-child(2) li:nth-child(18) table .ppayment,
+ul.SeatTemp40.coach:nth-child(1) li:nth-child(19) table .ppayment, ul.SeatTemp40.coach:nth-child(2) li:nth-child(19) table .ppayment,
+ul.SeatTemp40.coach:nth-child(1) li:nth-child(20) table .ppayment, ul.SeatTemp40.coach:nth-child(2) li:nth-child(20) table .ppayment {
+    width: 100%;
+}
+
+ul.SeatTemp31.coach:nth-child(1) li:nth-child(7) table, ul.SeatTemp31.coach:nth-child(1) li:nth-child(12) table,
+ul.SeatTemp31.coach:nth-child(1) li:nth-child(17) table, ul.SeatTemp31.coach:nth-child(1) li:nth-child(22) table,
+ul.SeatTemp31.coach:nth-child(1) li:nth-child(27) table, ul.SeatTemp31.coach:nth-child(1) li:nth-child(32) table {
+    border-right: 1px solid #000;
+}
+ul.SeatTemp37.coach:nth-child(1) li:nth-child(2) table, ul.SeatTemp37.coach:nth-child(1) li:nth-child(7) table,
+ul.SeatTemp37.coach:nth-child(1) li:nth-child(12) table, ul.SeatTemp37.coach:nth-child(1) li:nth-child(17) table,
+ul.SeatTemp37.coach:nth-child(1) li:nth-child(22) table, ul.SeatTemp37.coach:nth-child(1) li:nth-child(27) table,
+ul.SeatTemp37.coach:nth-child(1) li:nth-child(32) table, ul.SeatTemp37.coach:nth-child(1) li:nth-child(37) table {
+
+    border-right: 1px solid #000;
+	}
+ul.SeatTemp45.coach:nth-child(1) li:nth-child(2) table, ul.SeatTemp45.coach:nth-child(1) li:nth-child(7) table,
+ul.SeatTemp45.coach:nth-child(1) li:nth-child(12) table, ul.SeatTemp45.coach:nth-child(1) li:nth-child(17) table,
+ul.SeatTemp45.coach:nth-child(1) li:nth-child(22) table, ul.SeatTemp45.coach:nth-child(1) li:nth-child(27) table,
+ul.SeatTemp45.coach:nth-child(1) li:nth-child(32) table, ul.SeatTemp45.coach:nth-child(1) li:nth-child(37) table,
+ul.SeatTemp45.coach:nth-child(1) li:nth-child(42) table, ul.SeatTemp45.coach:nth-child(1) li:nth-child(47) table {
+    border-right: 1px solid #000;
+	}
+
+

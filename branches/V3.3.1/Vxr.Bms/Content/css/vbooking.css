@@ -1,0 +1,1043 @@
+#bksContent {
+    min-height: 768px;
+    margin-bottom: 30px;
+}
+
+.vbooking-ncsheet, .vbooking-csheet {
+    margin-top: 10px;
+}
+
+
+.coach {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.coach-l {
+    padding-right: 5px;
+}
+
+.coach-r {
+    padding-left: 5px;
+}
+
+.seat {
+    padding: 2px;
+    /*height: 82px;*/
+    height: 110px;
+    overflow: hidden;
+}
+
+    .seat > div {
+        border: 1px solid rgba(211,211,211,0.8);
+        height: 100%;
+    }
+
+.notallow {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: not-allowed !important;
+}
+/* Properties */
+.seat-code {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.1em;
+    padding: 5px;
+    text-align: left;
+    width: 28%;
+    /*width: 60px;*/
+    float: left;
+}
+
+.pick, .note {
+    float: right;
+    font-size: 11px;
+    line-height: 1.3em;
+    overflow: hidden;
+    padding: 0 5px;
+    text-align: right;
+    max-width: 72%;
+    min-width: 50%;
+}
+
+.pick {
+    padding-top: 2px;
+}
+/*.note {
+	text-decoration: underline;
+}*/
+.cinfo {
+    float: right;
+    padding: 5px 5px 5px 0;
+    width: 80%;
+    text-align: right;
+    margin-top: -20px;
+}
+
+    .cinfo > p {
+        margin: 0;
+    }
+
+    .cinfo p.name {
+        font-size: 10px;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+
+    .cinfo p.phone {
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+    }
+
+.agentinfo {
+    height: 30px;
+    overflow: hidden;
+}
+
+    .agentinfo p {
+        margin: 0;
+        padding: 0 5px;
+        font-size: 11px;
+    }
+
+.booking.fbooking {
+    background-color: #FCC3BD;
+    border: 1px solid #FCC3BD !important;
+    color: #000;
+}
+
+    .booking.fbooking .numT {
+        color: #f42a14;
+        font-weight: bold;
+    }
+/* Buttons */
+.bg-none {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.buttons {
+    float: left;
+    width: 80%;
+    padding: 5px 0 5px 5px;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+}
+/*.buttons  > button {
+	font-size: 11px;
+	padding: 5px 9px;
+}*/
+.btn.active {
+    background-color: transparent;
+    border-color: #bbb;
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+.available {
+    background: #fbfcfc;
+}
+
+.waiting {
+    background-image: url(../images/please-wait.GIF);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+/* Paid */
+.paid {
+    background-color: #ffe285;
+    border: 1px solid #ffe285 !important;
+}
+
+    .paid .btn.active {
+        border-color: #eab200;
+        color: #303030;
+    }
+    /*.paid .pick{
+	background: rgb(219, 181, 99);
+	color: black;
+}*/
+    .paid .numT {
+        color: #FF0000;
+        font-weight: 500;
+        font-size: 11px;
+    }
+
+.vxr {
+    background-color: #A5CAF2;
+    border: 1px solid #A5CAF2 !important;
+}
+
+    .vxr .btn.active {
+        border-color: #4c96e5;
+    }
+
+
+div.cancelled.vxr {
+    border: 1px solid #d3d3d3 !important;
+}
+/* Pass */
+.pass {
+    background-color: #1B1B1B;
+    border: 1px solid #1B1B1B !important;
+    color: #9C9C9C;
+}
+
+    .pass .btn.active {
+        border-color: #a0a0a0;
+        color: #CCCCCC;
+    }
+
+.seat-code.exported {
+    color: #f75327;
+}
+
+/* Lock */
+.lock {
+    background-color: #E6E7E7;
+}
+
+/*.pass .pick {
+	background: rgba(225, 225, 225, 0.1);
+	color: #DADADA;
+	padding-bottom: 2px;
+}*/
+/* Properties */
+.pick {
+    background: rgb(27, 175, 74);
+    color: #DBFFE1;
+    padding-bottom: 2px;
+    height: 18px;
+}
+
+    .pick.transfer {
+        background: rgb(0, 156, 243);
+        color: #E5F8FF;
+    }
+
+.available .pick {
+    background: none;
+}
+
+.numT {
+    color: #f75327;
+}
+
+.booking .numT {
+    color: #FFC200;
+}
+/* Booking */
+.booking {
+    background-color: #F0675A;
+    border: 1px solid #F0675A !important;
+    color: #000;
+}
+
+    .booking .btn.active {
+        border-color: #c92212;
+        color: #310F0F;
+    }
+
+    .booking .seat-code {
+        color: #2E0000;
+    }
+
+    .booking .name {
+        color: #1A1A1A;
+    }
+/* Keep on time */
+.keepOt {
+    background-color: #F0675A;
+    border: 1px solid #F0675A !important;
+    color: #000;
+}
+
+    .keepOt .btn.active {
+        border-color: #b61e10;
+        color: #310F0F;
+    }
+
+    .keepOt .seat-code {
+        color: #2E0000;
+    }
+
+    .keepOt .name {
+        color: #1A1A1A;
+    }
+/* Not come */
+.notcome {
+    background-color: #d9edf7;
+    border: 1px solid #d9edf7 !important;
+    color: #000;
+}
+
+    .notcome .btn.active {
+        color: #2C2C2C;
+        border-color: #247fac;
+    }
+
+/* Cancelled */
+.cancelled {
+    background-color: rgba(248,248,248,0.8);
+}
+
+    .cancelled .btn.active {
+        color: #2c2c2c;
+        border-color: #868888;
+    }
+/* More */
+.selected {
+    background: rgba(58,96,237,0.95);
+}
+
+li.list-group-item {
+    padding: 5px;
+    text-align: center;
+    background: #eee;
+    font-weight: 600;
+    line-height: 25px;
+    width: 45px;
+    height: 35px;
+}
+
+.seat button {
+    margin-right: 5px;
+}
+
+    .seat button:last-child {
+        margin-right: 0;
+    }
+
+.seat-code.exported {
+    color: #000;
+    background: rgb(229, 230, 21);
+}
+/* Colors */
+.vred {
+    color: #f75327 !important;
+}
+
+.vblue {
+    color: #28ABE3 !important;
+}
+
+.vgreen {
+    color: #7ce22b !important;
+}
+
+.vyellow {
+    color: #f6c31f !important;
+}
+
+.vblack {
+    color: black !important;
+}
+
+/* Modal */
+.modal-body .row {
+    margin-top: 10px;
+}
+
+.modal-body .list-btn {
+    border-top: 1px solid #ddd;
+    padding: 10px 0 0 0;
+    text-align: right;
+}
+
+    .modal-body .list-btn .btn {
+        margin-left: 5px;
+    }
+
+        .modal-body .list-btn .btn:first-child {
+            margin-left: 0;
+        }
+
+.modal-body ul.list-group {
+    box-shadow: none;
+}
+
+/* Search */
+.search-result {
+    display: block;
+    background: rgba(229,57,53,0.95);
+    border-radius: 0;
+    position: absolute;
+    left: 0 !important;
+    padding: 0;
+    width: 60vw;
+}
+
+    .search-result .search-title, .search-result .search-summary {
+        padding: 3px 10px;
+    }
+
+    .search-result .search-title {
+        color: #ffffff;
+    }
+
+        .search-result .search-title span {
+            position: relative;
+            float: right;
+            padding: 0;
+            margin: -3px -7px 3px 51px;
+        }
+
+            .search-result .search-title span:hover {
+                background-color: #f52525;
+            }
+
+    .search-result > table {
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll;
+    }
+
+.search-items {
+    width: 100%;
+}
+
+    .search-items tr {
+        width: 100% !important;
+        border-bottom: 1px solid #eee;
+        min-height: 35px;
+        line-height: 35px;
+        padding: 0 15px;
+        background: rgba(255,255,255,0.95);
+        cursor: default;
+    }
+
+        .search-items tr:hover {
+            background: rgba(249,215,214,0.95);
+        }
+
+        .search-items tr:last-child {
+            border-bottom: none;
+        }
+
+.search-result .not-found {
+    background: #fff;
+    margin: 0;
+    padding: 5px 15px;
+}
+
+.search-items .detail {
+    padding: 5px;
+}
+
+    .search-items .detail button {
+        background: rgba(230,29,53,0.6) !important;
+        border-color: rgba(230,29,53,0.6) !important;
+    }
+
+        .search-items .detail button:hover {
+            background: rgba(230,29,53,0.9) !important;
+            border-color: rgba(230,29,53,0.9) !important;
+        }
+
+
+.search-items .info {
+    text-align: left;
+    padding: 2px 5px;
+}
+
+/* History tab */
+.history-row {
+    max-height: 350px;
+    overflow: auto;
+}
+
+/* Valid, open, cancelled */
+.ext-seat {
+    position: relative;
+    font-size: 12px;
+    padding: 2px;
+}
+
+.voseat {
+    border: 1px solid #d3d3d3;
+    background: #d9edf7;
+    min-height: 55px;
+}
+
+    .voseat .vocode {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+        line-height: 55px;
+        width: 28%;
+        float: left;
+        padding: 0 5px;
+    }
+
+    .voseat .vinfo {
+        float: right;
+        width: 72%;
+        padding: 5px 0;
+    }
+
+    .voseat p {
+        margin: 0;
+        padding: 0 5px;
+        font-size: 10px;
+    }
+
+/* Callout */
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+
+    .bs-callout code {
+        border-radius: 3px;
+    }
+
+    .bs-callout + .bs-callout {
+        margin-top: -5px;
+    }
+
+.bs-callout-default {
+    border-left-color: #777;
+}
+
+    .bs-callout-default h4 {
+        color: #777;
+    }
+
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+
+.vbooking-info .bs-callout {
+    margin: 5px 0;
+    padding: 5px 20px;
+}
+
+/* ERROR */
+.has-error .control-label {
+    color: #F51D19 !important;
+}
+
+.has-error .form-control {
+    color: #F51D19 !important;
+    border-color: #F51D19 !important;
+}
+
+/* GRID , LIST */
+.list-ticket {
+    background: #fff;
+}
+
+.pIndex, .tIndex {
+    width: 42px;
+    text-align: center;
+}
+
+.list-ticket > tbody > tr.sorted {
+    background: #fcf8e3;
+}
+
+.table-striped > tbody > tr.lseat.selected > td {
+    background: #76B9F2 !important;
+}
+
+
+.btn:active {
+    border: 1px rgba(0,0,0,0.7) solid !important;
+}
+/* Ve chang */
+.s-half .seat-code {
+    background: url('../images/ico-chang.png') top left no-repeat;
+}
+
+.ghe-chang {
+    padding: 15px 7px;
+    background: rgba(0,0,0, 0.9);
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.them-chang {
+    position: fixed;
+    right: 10px;
+    bottom: 36px;
+    z-index: 9999;
+}
+
+.btn-them-chang {
+    background: rgba(255,255,255,0.4);
+    display: block;
+    height: 71px;
+    width: 80px;
+    color: #1F1F1F;
+    font-size: 24px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.chang-di {
+    min-width: 170px;
+    border: none !important;
+}
+
+    .chang-di select.input-chang {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        font-size: 14px;
+    }
+
+    .chang-di .control-label {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: normal;
+    }
+
+    .chang-di td {
+        padding-bottom: 0 !important;
+    }
+
+.chang-di-close {
+    position: fixed;
+    bottom: 130px;
+    left: 0;
+    background: #000;
+    color: #999;
+    padding: 4px 10px;
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+    .chang-di-close:hover {
+        text-decoration: none;
+        color: #999;
+    }
+
+.chang-box {
+    padding-right: 90px;
+}
+
+.list-ticket-bar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.s-route-info {
+    padding: 5px 0 0 5px;
+    text-align: left;
+    width: 28%;
+    float: left;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 600;
+}
+
+.m-seat {
+}
+
+.customer-w {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+    .customer-w ul {
+        padding-left: 15px;
+    }
+
+.status-bar {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    background: rgba(255,255,255,0.1);
+    padding: 0 15px;
+    right: 0;
+    color: rgba(0,0,0,0.0);
+    border-top: 2px solid rgba(30,98,163,0);
+}
+
+    .status-bar strong {
+        opacity: 0;
+    }
+
+    .status-bar:hover strong {
+        opacity: 1;
+    }
+
+    .status-bar:hover {
+        background: rgba(234,234,234,1);
+        border-top: 2px solid rgba(30,98,163,1);
+        color: rgba(0,0,0,1);
+    }
+
+
+.notice-bar {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    background: #DEFCDE;
+    padding: 0 15px;
+    left: 0;
+    border-top: 2px solid #11A100;
+}
+
+.latest-act {
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.btn-log {
+    padding-left: 10px;
+}
+
+.list-log {
+    background: #fff;
+    position: fixed;
+    right: -1000px;
+    bottom: 35px;
+    width: 200px;
+    height: 95%;
+    border-left: 2px #ddd solid;
+    z-index: 99;
+}
+
+    .list-log table {
+        margin-bottom: 0;
+    }
+
+        .list-log table tr td {
+            padding-left: 15px;
+        }
+
+            .list-log table tr td h5 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+                .list-log table tr td h5 a {
+                    color: #000;
+                }
+
+                    .list-log table tr td h5 a:hover {
+                        text-decoration: none;
+                    }
+
+.log-content {
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.search-log {
+    position: absolute;
+    bottom: 0px;
+    padding-left: 10px;
+}
+
+.seat {
+    position: relative;
+}
+
+.seat-chang {
+    overflow: visible !important;
+}
+
+    .seat-chang .agentinfo {
+        height: 30px;
+    }
+
+    .seat-chang .seat-code {
+        padding-left: 15px;
+    }
+
+    .seat-chang .buttons {
+        position: absolute;
+        bottom: 3px;
+    }
+
+.chang-di {
+    width: 100%;
+    bottom: 95px;
+    left: 0px;
+    display: none;
+    z-index: 3;
+    position: absolute;
+    padding-bottom: 20px;
+    padding-left: 3px;
+}
+
+    .chang-di ul {
+        margin-left: 0px !important;
+        padding-left: 0px;
+        background: rgba(0,0,0,0.8);
+        padding: 5px 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+        .chang-di ul li a {
+            display: inline;
+            font-size: 11px;
+            text-decoration: none;
+            color: #bbbbbb !important;
+        }
+
+        .chang-di ul li {
+            list-style: decimal;
+            list-style-position: inside;
+            border-bottom: 1px #bbbbbb solid;
+            text-align: left;
+            height: 45px;
+            color: #bbbbbb !important;
+            padding-top: 5px;
+        }
+
+            .chang-di ul li:last-child {
+                border-bottom: none;
+            }
+
+.nhieu-chang-ng-dat {
+    line-height: 1;
+    margin-top: 0;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-top: 0;
+    color: #969696 !important;
+}
+
+.so-chang {
+    background: #1e62a3;
+    padding: 4px 8px;
+    margin-top: -3px;
+    font-weight: normal;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    z-index: 2;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.thong-ke-tb {
+    background: none repeat scroll 0 0 #fff;
+}
+
+.chi-phi .form-group {
+    margin-bottom: 0 !important;
+}
+
+.chi-phi label {
+    margin-bottom: 0;
+}
+
+.dotted-background {
+    background: url('../images/dotted-background.gif') repeat;
+}
+
+/* tuy vao kich thuoc hinh anh ma chia doi khoang cach x y (VD: 60x30 --> x la 30, y la 15) */
+.cursor-them-ve {
+    cursor: auto;
+    cursor: url('../images/them-ve-icon.png') 16 16, auto;
+}
+
+.cursor-khu-hoi {
+    cursor: auto;
+    cursor: url('../images/khu-hoi-icon.png') 16 16, auto;
+}
+
+.cursor-moving {
+    cursor: auto;
+    cursor: url('../images/moving-icon.png') 16 16, auto;
+}
+
+.chosen-container-single .chosen-single {
+    border-radius: 0 !important;
+}
+
+#FilterForm button {
+    margin-bottom: 8px;
+}
+
+.FilterForm .form-control {
+    border: 1px solid #D3D3D3 !important;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+#update-popup .modal-md {
+    width: 765px;
+}
+
+.cmodal-error-input {
+    border-color: #F51D19;
+    border-right: 0;
+}
+
+.cmodal-error-addon {
+    border-color: #F51D19;
+    border-left: 0;
+}
+
+body div.ui-layout-north {
+    z-index: 99 !important;
+    overflow: initial !important;
+}
+
+.pop-payment li.list-group-item {
+    float: left;
+}
+
+.ngay-chay {
+    padding-right: 15px;
+}
+
+    .ngay-chay label {
+        padding-left: 0;
+        padding-top: 7px;
+    }
+
+.select-tuyen {
+    padding-right: 0;
+}
+
+.vbooking-container .panel {
+    margin-bottom: 0;
+}
+
+.vbooking-container .close {
+    margin-right: 10px;
+    margin-top: 5px;
+    color: #fff;
+    opacity: 1.0;
+    text-shadow: none;
+}
+
+.vbooking-container .panel-body {
+    padding-bottom: 0;
+}
+
+.vbooking-container .form-group {
+    margin-bottom: 8px;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .9s infinite linear;
+    -webkit-animation: spin2 .9s infinite linear;
+    -moz-animation: spin2 .9s infinite linear;
+    -o-animation: spin2 .9s infinite linear;
+    animation: spin2 .9s infinite linear;
+}
+
+.stage-ticket-context {
+    text-decoration: underline !important;
+}
+
+.divFeePercentRadio {
+    margin-left: 92px;
+}
+
+.book-return {
+    -webkit-animation: bookReturnEffect 500ms infinite; /* Chrome, Safari, Opera */
+    animation: bookReturnEffect 500ms infinite;
+}
+
+    .book-return:focus {
+        animation-play-state: paused;
+        -webkit-animation-play-state: paused; /* Safari and Chrome */
+    }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bookReturnEffect {
+    from {
+        border: 1px solid #ccc;
+    }
+
+    to {
+        border: 2px solid red;
+    }
+}
+
+/* Standard syntax */
+@keyframes bookReturnEffect {
+    from {
+        border: 1px solid #ccc;
+    }
+
+    to {
+        border: 2px solid red;
+    }
+}
+
+.picked-point-selected {
+    background-color: #e0e0e0;
+}
+
+.navbar input {
+    max-width: 150px !important;
+}
