@@ -1,5 +1,0 @@
-E:\VXR-PJ\trunk\Vxr.Bms.Report\bin\Debug\Vxr.Bms.Report.dll
-E:\VXR-PJ\trunk\Vxr.Bms.Report\bin\Debug\Vxr.Bms.Report.pdb
-E:\VXR-PJ\trunk\Vxr.Bms.Report\obj\x86\Debug\Vxr.Bms.Report.csprojResolveAssemblyReference.cache
-E:\VXR-PJ\trunk\Vxr.Bms.Report\obj\x86\Debug\Vxr.Bms.Report.dll
-E:\VXR-PJ\trunk\Vxr.Bms.Report\obj\x86\Debug\Vxr.Bms.Report.pdb

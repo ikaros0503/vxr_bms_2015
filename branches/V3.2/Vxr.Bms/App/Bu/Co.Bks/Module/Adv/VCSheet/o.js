@@ -1,6 +1,0 @@
-﻿define({
-    x: '.vcancelled-container',
-    _cVCTripId: 0,
-    _cVCPageIndex: 1,
-    _totalVCItem: 0,
-})

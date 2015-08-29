@@ -1,4 +1,0 @@
-E:\VXR-PJ\trunk\Vxr.Bms.Db\bin\Debug\Vxr.Bms.Db.dll
-E:\VXR-PJ\trunk\Vxr.Bms.Db\bin\Debug\Vxr.Bms.Db.pdb
-E:\VXR-PJ\trunk\Vxr.Bms.Db\obj\Debug\Vxr.Bms.Db.dll
-E:\VXR-PJ\trunk\Vxr.Bms.Db\obj\Debug\Vxr.Bms.Db.pdb

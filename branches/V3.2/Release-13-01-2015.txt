@@ -1,4 +1,0 @@
-﻿Deploy
--- Add SeatType to Ticket table
--- Alter view zgcl_Ticket00, zgcl_Ticket01, zgcl_Ticket02, zgcl_Ticket03 add get SeatType.
--- JS Dict:  _availableSeatOn Turn ON/OFF show available seat
